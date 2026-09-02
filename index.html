@@ -1,0 +1,1311 @@
+<title>Your First Day on Kablanet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+
+<style>
+/* ============================================================
+   Tokens — light is the base; dark redefines tokens only.
+   ============================================================ */
+:root {
+  --paper:      #F4F6F8;
+  --card:       #FFFFFF;
+  --card-2:     #FAFBFC;
+  --ink:        #141C26;
+  --ink-2:      #4C5967;
+  --ink-3:      #7C8894;
+  --line:       #E1E7ED;
+  --line-soft:  #EEF2F5;
+  --deep:       #1B2430;
+  --deep-2:     #2A3644;
+  --deep-ink:   #D8E2EC;
+  --deep-ink-2: #93A2B2;
+  --accent:     #0B63CE;
+  --accent-2:   #084EA6;
+  --accent-soft:#E7F0FC;
+  --pos:        #12855C;
+  --pos-soft:   #E2F4EC;
+  --warn:       #A96E06;
+  --warn-soft:  #FBF0DA;
+  --neg:        #C33636;
+  --neg-soft:   #FBE9E9;
+  --shadow:     0 1px 2px rgba(20,28,38,.05), 0 8px 24px -12px rgba(20,28,38,.18);
+  --shadow-lift:0 2px 4px rgba(20,28,38,.06), 0 18px 40px -18px rgba(20,28,38,.28);
+  --radius:     10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #0C131B;
+    --card:       #141D27;
+    --card-2:     #18222E;
+    --ink:        #E9EFF5;
+    --ink-2:      #A7B5C2;
+    --ink-3:      #7A8794;
+    --line:       #24313F;
+    --line-soft:  #1C2733;
+    --deep:       #080E15;
+    --deep-2:     #16202B;
+    --deep-ink:   #DCE6F0;
+    --deep-ink-2: #8A99A9;
+    --accent:     #5AA6FF;
+    --accent-2:   #8CC2FF;
+    --accent-soft:#122740;
+  --on-accent: #08121E;
+    --on-accent: #08121E;
+    --pos:        #3FCB90;
+    --pos-soft:   #0E2A20;
+    --warn:       #E3A63E;
+    --warn-soft:  #2C2413;
+    --neg:        #F07070;
+    --neg-soft:   #2E1818;
+    --shadow:     0 1px 2px rgba(0,0,0,.4), 0 10px 28px -14px rgba(0,0,0,.7);
+    --shadow-lift:0 2px 6px rgba(0,0,0,.45), 0 20px 44px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"] {
+  --paper:      #0C131B;
+  --card:       #141D27;
+  --card-2:     #18222E;
+  --ink:        #E9EFF5;
+  --ink-2:      #A7B5C2;
+  --ink-3:      #7A8794;
+  --line:       #24313F;
+  --line-soft:  #1C2733;
+  --deep:       #080E15;
+  --deep-2:     #16202B;
+  --deep-ink:   #DCE6F0;
+  --deep-ink-2: #8A99A9;
+  --accent:     #5AA6FF;
+  --accent-2:   #8CC2FF;
+  --accent-soft:#122740;
+  --pos:        #3FCB90;
+  --pos-soft:   #0E2A20;
+  --warn:       #E3A63E;
+  --warn-soft:  #2C2413;
+  --neg:        #F07070;
+  --neg-soft:   #2E1818;
+  --shadow:     0 1px 2px rgba(0,0,0,.4), 0 10px 28px -14px rgba(0,0,0,.7);
+  --shadow-lift:0 2px 6px rgba(0,0,0,.45), 0 20px 44px -18px rgba(0,0,0,.8);
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+* { box-sizing: border-box; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 {
+  font-family: Archivo, "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  text-wrap: balance;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+p { margin: 0; }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+.eyebrow {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.num { font-variant-numeric: tabular-nums; }
+
+/* ============================================================
+   Hero
+   ============================================================ */
+.hero {
+  background: var(--deep);
+  color: var(--deep-ink);
+  padding: 56px 24px 88px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.028) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(120% 90% at 78% 10%, #000 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-inner { max-width: 1180px; margin: 0 auto; position: relative; z-index: 1; }
+.hero .eyebrow { color: var(--deep-ink-2); }
+.hero h1 {
+  font-size: clamp(34px, 6vw, 58px);
+  font-weight: 700;
+  line-height: 1.03;
+  letter-spacing: -0.03em;
+  margin: 14px 0 0;
+  max-width: 15ch;
+  color: #FFF;
+}
+.hero h1 em {
+  font-style: normal;
+  color: #7FB6FF;
+}
+.hero-lede {
+  margin-top: 20px;
+  max-width: 56ch;
+  font-size: clamp(16px, 2.2vw, 19px);
+  color: var(--deep-ink);
+  line-height: 1.62;
+}
+.hero-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  margin-top: 28px;
+}
+.fact {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.05);
+  border-radius: 999px;
+  padding: 7px 14px 7px 11px;
+  font-size: 13.5px;
+  color: var(--deep-ink);
+}
+.fact svg { flex: none; }
+.hero-cta { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
+}
+.btn-primary { background: var(--accent); color: var(--on-accent); box-shadow: 0 8px 20px -10px rgba(11,99,206,.55); }
+.btn-primary:hover { transform: translateY(-1px); background: var(--accent-2); }
+.btn-ghost { border-color: rgba(255,255,255,.2); color: #FFF; }
+.btn-ghost:hover { background: rgba(255,255,255,.08); }
+
+/* ============================================================
+   Shell: sticky spine + column
+   ============================================================ */
+.shell {
+  max-width: 1180px;
+  margin: -52px auto 0;
+  padding: 0 24px 96px;
+  display: grid;
+  grid-template-columns: 236px minmax(0, 1fr);
+  gap: 44px;
+  position: relative;
+  z-index: 2;
+}
+.spine { position: relative; }
+.spine-inner {
+  position: sticky;
+  top: 24px;
+  background: var(--deep-2);
+  border-radius: 12px;
+  padding: 16px 12px;
+  box-shadow: var(--shadow-lift);
+}
+.spine-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 8px 14px;
+  border-bottom: 1px solid rgba(255,255,255,.09);
+  margin-bottom: 10px;
+}
+.spine-mark {
+  width: 28px; height: 28px;
+  border-radius: 7px;
+  background: var(--accent);
+  color: #FFF;
+  display: grid; place-items: center;
+  font-family: Archivo, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  flex: none;
+}
+.spine-head span { color: #FFF; font-weight: 600; font-size: 14px; }
+.spine-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--deep-ink-2);
+  padding: 0 8px 8px;
+}
+.spine a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 9px;
+  border-radius: 7px;
+  color: var(--deep-ink);
+  text-decoration: none;
+  font-size: 13.5px;
+  line-height: 1.3;
+  transition: background .15s ease, color .15s ease;
+}
+.spine a svg { flex: none; opacity: .75; }
+.spine a:hover { background: rgba(255,255,255,.07); color: #FFF; }
+.spine a.active { background: rgba(255,255,255,.12); color: #FFF; font-weight: 600; }
+.spine a.active svg { opacity: 1; color: #7FB6FF; }
+
+.col { max-width: 760px; min-width: 0; padding-top: 62px; }
+
+/* ============================================================
+   Sections & cards
+   ============================================================ */
+section { scroll-margin-top: 20px; }
+section + section { margin-top: 56px; }
+.sec-head { margin-bottom: 18px; }
+.sec-head h2 {
+  font-size: clamp(23px, 3.4vw, 29px);
+  font-weight: 700;
+  margin-top: 8px;
+  line-height: 1.15;
+}
+.sec-head p { color: var(--ink-2); margin-top: 10px; max-width: 62ch; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.pad { padding: 22px; }
+
+.prose p + p { margin-top: 14px; }
+.prose { color: var(--ink-2); }
+.prose strong { color: var(--ink); font-weight: 600; }
+
+/* steps */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.steps li {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 14px;
+  align-items: start;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+.steps li:last-child { border-bottom: 0; }
+.step-n {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: grid; place-items: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 1px;
+}
+.step-b h4 { font-size: 16px; font-weight: 600; }
+.step-b p { color: var(--ink-2); font-size: 15px; margin-top: 4px; }
+code, .kbd {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: .88em;
+  background: var(--line-soft);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 1px 6px;
+  color: var(--ink);
+}
+
+.note {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 12px;
+  border-radius: 9px;
+  padding: 15px 17px;
+  font-size: 14.5px;
+  line-height: 1.55;
+  margin-top: 18px;
+}
+.note-warn { background: var(--warn-soft); color: var(--warn); border: 1px solid color-mix(in srgb, var(--warn) 26%, transparent); }
+.note-info { background: var(--accent-soft); color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 24%, transparent); }
+.note strong { font-weight: 600; }
+.note svg { margin-top: 2px; }
+
+/* screen block */
+.screen { margin-top: 22px; }
+.screen-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 12px;
+  margin-bottom: 12px;
+}
+.screen-top h3 { font-size: 19px; font-weight: 600; }
+.path {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  color: var(--ink-3);
+  background: var(--line-soft);
+  border-radius: 5px;
+  padding: 2px 7px;
+}
+.open {
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+.open:hover { text-decoration: underline; }
+.open .arw { transition: transform .18s ease; }
+.open:hover .arw { transform: translateX(3px); }
+
+/* ============================================================
+   Mockups
+   ============================================================ */
+.mock {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.mock-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 13px;
+  border-bottom: 1px solid var(--line-soft);
+  background: var(--card-2);
+}
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--line); }
+.mock-title {
+  font-size: 12px;
+  color: var(--ink-3);
+  font-family: "IBM Plex Mono", monospace;
+  margin-left: 4px;
+}
+.mock-tag {
+  margin-left: auto;
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-family: "IBM Plex Mono", monospace;
+}
+.mock-body { padding: 16px; }
+
+.tiles { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+@media (min-width: 620px) { .tiles { grid-template-columns: repeat(4, 1fr); } }
+.tile {
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--card-2);
+}
+.tile .lbl { font-size: 11px; color: var(--ink-3); line-height: 1.35; min-height: 2.7em; }
+.tile .val { font-family: Archivo, sans-serif; font-weight: 600; font-size: 19px; margin-top: 6px; letter-spacing: -0.02em; }
+.tile.pos .val { color: var(--pos); }
+.tile.warn .val { color: var(--warn); }
+
+table.mt { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.mt th {
+  text-align: left;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  padding: 0 8px 9px;
+  border-bottom: 1px solid var(--line);
+}
+.mt td { padding: 11px 8px; border-bottom: 1px solid var(--line-soft); color: var(--ink-2); }
+.mt tr:last-child td { border-bottom: 0; }
+.mt td.name { color: var(--ink); font-weight: 500; }
+.mt td.r { text-align: right; }
+.scrollx { overflow-x: auto; }
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11.5px;
+  font-weight: 500;
+  border-radius: 999px;
+  padding: 3px 9px;
+  white-space: nowrap;
+}
+.chip-pos { background: var(--pos-soft); color: var(--pos); }
+.chip-warn { background: var(--warn-soft); color: var(--warn); }
+.chip-neg { background: var(--neg-soft); color: var(--neg); }
+.chip-neutral { background: var(--line-soft); color: var(--ink-2); }
+
+.bar { height: 6px; border-radius: 3px; background: var(--line-soft); overflow: hidden; }
+.bar > i { display: block; height: 100%; background: var(--accent); border-radius: 3px; width: 0; transition: width 1.1s cubic-bezier(.2,.7,.3,1); }
+.in .bar > i { width: var(--w, 50%); }
+
+.aging { display: grid; gap: 11px; }
+.aging-row { display: grid; grid-template-columns: 74px 1fr 78px; gap: 12px; align-items: center; font-size: 12.5px; }
+.aging-row .lab { color: var(--ink-2); font-family: "IBM Plex Mono", monospace; font-size: 11.5px; }
+.aging-row .amt { text-align: right; color: var(--ink); font-weight: 500; }
+.aging-track { height: 20px; border-radius: 5px; background: var(--line-soft); overflow: hidden; }
+.aging-track > i { display: block; height: 100%; width: 0; border-radius: 5px; transition: width 1s cubic-bezier(.2,.7,.3,1); }
+.in .aging-track > i { width: var(--w); }
+.a-ok > i { background: color-mix(in srgb, var(--accent) 70%, transparent); }
+.a-warn > i { background: color-mix(in srgb, var(--warn) 78%, transparent); }
+.a-bad > i { background: color-mix(in srgb, var(--neg) 78%, transparent); }
+
+.mock-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 6px 11px;
+}
+.mock-head-row { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.mock-head-row h5 { font-family: Archivo, sans-serif; font-size: 15px; font-weight: 600; margin: 0; }
+.mock-head-row .mock-btn { margin-left: auto; }
+
+/* status cycle */
+.cycle { position: relative; display: inline-grid; }
+.cycle > span { grid-area: 1 / 1; }
+.cycle .s1 { animation: swap1 6s infinite; }
+.cycle .s2 { animation: swap2 6s infinite; }
+@keyframes swap1 { 0%,42% { opacity:1; } 50%,92% { opacity:0; } 100% { opacity:1; } }
+@keyframes swap2 { 0%,42% { opacity:0; } 50%,92% { opacity:1; } 100% { opacity:0; } }
+
+/* flow diagram */
+.flow { display: grid; gap: 14px; align-items: center; grid-template-columns: 1fr; margin-top: 4px; }
+@media (min-width: 700px) { .flow { grid-template-columns: 1fr auto 1fr auto 1fr; gap: 10px; } }
+.flow-node {
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 15px 16px;
+  background: var(--card-2);
+}
+.flow-node .who { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); font-family: "IBM Plex Mono", monospace; }
+.flow-node h4 { font-size: 16px; margin-top: 5px; }
+.flow-node p { font-size: 13.5px; color: var(--ink-2); margin-top: 5px; }
+.flow-node.you { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); background: var(--accent-soft); }
+.flow-arrow { display: grid; place-items: center; color: var(--ink-3); }
+.flow-arrow span { font-size: 11px; font-family: "IBM Plex Mono", monospace; letter-spacing: .06em; }
+
+/* small grid of secondary screens */
+.grid2 { display: grid; gap: 12px; grid-template-columns: 1fr; margin-top: 18px; }
+@media (min-width: 560px) { .grid2 { grid-template-columns: 1fr 1fr; } }
+.grid2 .span2 { grid-column: 1 / -1; }
+.mini {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 16px;
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+}
+.mini:hover { transform: translateY(-2px); box-shadow: var(--shadow-lift); border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); }
+.mini-top { display: flex; align-items: center; gap: 9px; }
+.mini-top h4 { font-size: 15px; font-weight: 600; }
+.mini-top svg { color: var(--accent); flex: none; }
+.mini p { font-size: 13.5px; color: var(--ink-2); margin-top: 7px; }
+.mini .path { margin-top: 10px; display: inline-block; }
+
+/* checklist */
+.check-wrap { padding: 22px; }
+.progress-line { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.progress-line .bar { flex: 1; height: 8px; }
+.progress-line .bar > i { background: var(--pos); width: 0; transition: width .35s ease; }
+.progress-line .count { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--ink-3); white-space: nowrap; }
+.tasks { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.tasks li { border-bottom: 1px solid var(--line-soft); }
+.tasks li:last-child { border-bottom: 0; }
+.tasks label {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 13px 4px;
+  cursor: pointer;
+}
+.tasks input {
+  appearance: none;
+  width: 19px; height: 19px;
+  margin: 2px 0 0;
+  border: 1.5px solid var(--line);
+  border-radius: 5px;
+  background: var(--card);
+  display: grid; place-items: center;
+  cursor: pointer;
+  transition: background .16s ease, border-color .16s ease;
+}
+.tasks input:checked { background: var(--pos); border-color: var(--pos); }
+.tasks input:checked::after {
+  content: "";
+  width: 5px; height: 9px;
+  border: solid #FFF;
+  border-width: 0 2px 2px 0;
+  transform: rotate(43deg) translate(-1px, -1px);
+}
+.tasks .t-b strong { display: block; font-weight: 600; color: var(--ink); font-size: 15px; }
+.tasks .t-b span { font-size: 13.5px; color: var(--ink-2); }
+.tasks input:checked ~ .t-b strong { text-decoration: line-through; color: var(--ink-3); }
+.tasks input:checked ~ .t-b span { color: var(--ink-3); }
+
+/* faq */
+.faq { display: grid; gap: 10px; }
+details.q {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 0 18px;
+}
+details.q summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 16px 0;
+  font-weight: 600;
+  font-size: 15.5px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+details.q summary::-webkit-details-marker { display: none; }
+details.q summary::after {
+  content: "";
+  margin-left: auto;
+  width: 8px; height: 8px;
+  border-right: 1.8px solid var(--ink-3);
+  border-bottom: 1.8px solid var(--ink-3);
+  transform: rotate(45deg) translate(-2px, -2px);
+  transition: transform .2s ease;
+  flex: none;
+}
+details.q[open] summary::after { transform: rotate(-135deg) translate(-2px, -2px); }
+details.q .a { padding: 0 0 18px; color: var(--ink-2); font-size: 15px; max-width: 62ch; }
+details.q .a p + p { margin-top: 10px; }
+
+/* footer */
+.foot {
+  border-top: 1px solid var(--line);
+  margin-top: 64px;
+  padding-top: 26px;
+  color: var(--ink-3);
+  font-size: 13.5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  align-items: center;
+}
+.foot .brand { font-family: Archivo, sans-serif; font-weight: 600; color: var(--ink); }
+
+/* reveal — only active once JS confirms it can run */
+.js-anim .rev { opacity: 0; transform: translateY(14px); transition: opacity .55s ease, transform .55s cubic-bezier(.2,.7,.3,1); }
+.js-anim .rev.in { opacity: 1; transform: none; }
+
+@media (max-width: 900px) {
+  .shell { grid-template-columns: 1fr; gap: 0; margin-top: 0; }
+  .spine { display: none; }
+  .col { max-width: none; padding-top: 40px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+  .js-anim .rev { opacity: 1; transform: none; }
+}
+</style>
+
+<div class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Kablanet &middot; welcome aboard</p>
+    <h1>Your whole business, <em>on one screen.</em></h1>
+    <p class="hero-lede">
+      Every job you're running, every invoice you've sent, what your customers still owe you, what you
+      owe your own subs and suppliers, and what each job actually leaves you at the end. To save you a
+      cold start, we've pre-loaded some of your past work — so the first time you sign in you're looking
+      at real jobs, not an empty screen.
+    </p>
+    <div class="hero-facts">
+      <span class="fact">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="#7FB6FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 13V6l6-4 6 4v7"/><path d="M6.2 13V9.2h3.6V13"/></svg>
+        Your projects
+      </span>
+      <span class="fact">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="#7FB6FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 2h9v12l-2-1.2L8.5 14 6.5 12.8 4.5 14 3.5 13z"/><path d="M6 5.5h4M6 8.2h4"/></svg>
+        Your invoices
+      </span>
+      <span class="fact">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="#7FB6FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4.5h12v7H2z"/><path d="M2 7h12"/></svg>
+        Money in and out
+      </span>
+      <span class="fact">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="#7FB6FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 14s5-3.2 5-7.1A5 5 0 0 0 3 6.9C3 10.8 8 14 8 14z"/><circle cx="8" cy="6.8" r="1.7"/></svg>
+        Your subs &amp; suppliers
+      </span>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="https://kablanet.com/login" target="_blank" rel="noopener">
+        Sign in to Kablanet
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h9"/><path d="M8.5 4.5 12 8l-3.5 3.5"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="#tour">Take the 5-minute tour</a>
+      <a class="btn btn-ghost" href="./kablanet-tour.html">Every screen, one by one &rarr;</a>
+    </div>
+  </div>
+</div>
+
+<div class="shell">
+
+  <nav class="spine" aria-label="Page sections">
+    <div class="spine-inner">
+      <div class="spine-head">
+        <span class="spine-mark">K</span>
+        <span>Your first day</span>
+      </div>
+      <p class="spine-label">Start here</p>
+      <a href="#signin"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2h5.5v12H7"/><path d="M2 8h7"/><path d="M6 5 9 8l-3 3"/></svg>Signing in</a>
+      <a href="#model"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="4.5" cy="8" r="2.2"/><circle cx="11.5" cy="8" r="2.2"/><path d="M6.7 8h2.6"/></svg>How it's set up</a>
+      <p class="spine-label" style="padding-top:12px">The screens</p>
+      <a href="#dashboard"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 13V6.6L8 2l6 4.6V13z"/><path d="M6.3 13V9.4h3.4V13"/></svg>Dashboard</a>
+      <a href="#projects"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 14V3.2L8.5 2v12"/><path d="M8.5 6.4H13.5V14"/><path d="M4.6 5.4h1.8M4.6 8h1.8M4.6 10.6h1.8"/></svg>Projects</a>
+      <a href="#invoices"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2h10v12l-2-1.2L9 14l-2-1.2L5 14l-2-1.2z"/><path d="M5.6 5.6h4.8M5.6 8.4h4.8"/></svg>Invoices</a>
+      <a href="#paid"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 11.5 6 7l3 2.6 5-5.6"/><path d="M14 7.6V4h-3.6"/></svg>Getting paid</a>
+      <a href="#estimates"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v12"/><path d="M3 5.5h10"/><path d="M3 5.5 1.6 9.4h2.8zM13 5.5l1.4 3.9h-2.8z"/></svg>Estimates</a>
+      <a href="#costs"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5.5h12V13H2z"/><path d="M5.6 5.5V3.6h4.8v1.9"/></svg>Your costs</a>
+      <a href="#extras"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="4" cy="4" r="1.6"/><circle cx="4" cy="12" r="1.6"/><circle cx="12" cy="4" r="1.6"/><circle cx="12" cy="12" r="1.6"/></svg>Everything else</a>
+      <p class="spine-label" style="padding-top:12px">Then</p>
+      <a href="#checklist"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 4.6 4 6.1l2.6-2.8"/><path d="M2.5 11.4 4 12.9l2.6-2.8"/><path d="M8.6 5h5M8.6 11.8h5"/></svg>First 15 minutes</a>
+      <a href="#questions"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M6.3 6.3a1.8 1.8 0 1 1 2.4 1.7c-.5.2-.7.6-.7 1.1"/><path d="M8 11.4h.01"/></svg>Questions</a>
+    </div>
+  </nav>
+
+  <main class="col">
+
+    <!-- ========== SIGNING IN ========== -->
+    <section id="signin" class="rev">
+      <div class="sec-head">
+        <p class="eyebrow">Step one</p>
+        <h2>Signing in the first time</h2>
+        <p>Your account already exists — you don't need to sign up or create a company. It takes about a minute.</p>
+      </div>
+
+      <div class="card pad">
+        <ol class="steps">
+          <li>
+            <span class="step-n">1</span>
+            <div class="step-b">
+              <h4>Go to kablanet.com</h4>
+              <p>It works in any browser, on a laptop or on your phone. There's nothing to install.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-n">2</span>
+            <div class="step-b">
+              <h4>Sign in with your email address</h4>
+              <p>Use the same email this invitation was sent to, and the temporary password from that email. If it doesn't work, click <strong>Forgot password</strong> and we'll email you a reset link.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-n">3</span>
+            <div class="step-b">
+              <h4>Change your password right away</h4>
+              <p>Open <code>Settings</code> in the left menu, stay on the <strong>User Settings</strong> tab, and use <strong>Change Password</strong> on the right. While you're there, check that your name and contact details are right — they appear on the documents you send.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="note note-warn">
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2.6 14.4 13H1.6z"/><path d="M8 6.6v3"/><path d="M8 11.4h.01"/></svg>
+          <div><strong>Please don't skip step 3.</strong> The temporary password is only meant to get you in the door. Your account holds real money figures, so give it a password only you know.</div>
+        </div>
+
+        <div class="hero-cta" style="margin-top:22px">
+          <a class="btn btn-primary" href="https://kablanet.com/login" target="_blank" rel="noopener">
+            Open the sign-in page
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h9"/><path d="M8.5 4.5 12 8l-3.5 3.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MENTAL MODEL ========== -->
+    <section id="model" class="rev">
+      <div class="sec-head">
+        <p class="eyebrow">How it's set up</p>
+        <h2>It's your business in here</h2>
+        <p>The most useful thing to understand on day one: this isn't a portal for one customer's jobs. It's your own set of books, and it works the same for every customer, every crew and every supplier you deal with.</p>
+      </div>
+
+      <div class="card pad">
+        <div class="flow">
+          <div class="flow-node">
+            <p class="who">Money in</p>
+            <h4>Your customers</h4>
+            <p>Builders, developers, homeowners — whoever you invoice. You bill them, and Kablanet tracks what's still outstanding.</p>
+          </div>
+          <div class="flow-arrow">
+            <svg width="34" height="16" viewBox="0 0 34 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 8H4"/><path d="M8.5 4 4 8l4.5 4"/></svg>
+            <span>you bill</span>
+          </div>
+          <div class="flow-node you">
+            <p class="who">Your company</p>
+            <h4>You</h4>
+            <p>Your projects and your crews in the middle. You're the admin here — everything in the account is yours to set up your way.</p>
+          </div>
+          <div class="flow-arrow">
+            <svg width="34" height="16" viewBox="0 0 34 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h28"/><path d="M25.5 4 30 8l-4.5 4"/></svg>
+            <span>you pay</span>
+          </div>
+          <div class="flow-node">
+            <p class="who">Money out</p>
+            <h4>Subs &amp; suppliers</h4>
+            <p>The contractors you hand work to and the merchants you buy from. What you owe them sits against the same job.</p>
+          </div>
+        </div>
+
+        <div class="prose" style="margin-top:20px">
+          <p>Both sides of that picture live on the same project, which is the whole point: once a job has your billing on one side and your labour, subs and materials on the other, Kablanet can tell you what the job actually left you — not just what it was worth.</p>
+          <p><strong>To give you a running start, we copied across some of your recent work with Lux Builders</strong> — the projects, the amounts invoiced and the payments received. Treat it as an example to learn on, not the limit. Add your own customers and jobs whenever you're ready, and run the rest of your business through here the same way.</p>
+          <p>You'll also find a <strong>Demo Customer</strong> and a <strong>Demo Project</strong> in the list. That's a practice job we left you on purpose — raise a test invoice against it, break it, delete it. It's not real work and it doesn't affect your real totals.</p>
+        </div>
+
+        <div class="note note-info">
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6.2"/><path d="M8 7.4v3.4"/><path d="M8 5.2h.01"/></svg>
+          <div>Spot something in the pre-loaded jobs that doesn't match your records — a wrong amount, a missing job, a payment you never received? Don't work around it. Tell us and we'll fix it at the source.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DASHBOARD ========== -->
+    <section id="dashboard" class="rev">
+      <p class="eyebrow" id="tour">The screens &middot; 01</p>
+      <div class="screen">
+        <div class="screen-top">
+          <h3>Dashboard</h3>
+          <span class="path">/dashboard</span>
+          <a class="open" href="https://kablanet.com/dashboard" target="_blank" rel="noopener">Open<span class="arw">&rarr;</span></a>
+        </div>
+        <p class="prose">Where you land when you sign in. The tiles across the top answer the only question that matters on a Monday morning: <strong>how much is out there, and how much has landed?</strong></p>
+
+        <div class="mock" style="margin-top:16px">
+          <div class="mock-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="mock-title">Dashboard</span>
+            <span class="mock-tag">Sample figures</span>
+          </div>
+          <div class="mock-body">
+            <div class="tiles">
+              <div class="tile">
+                <p class="lbl">Total Projects Value</p>
+                <p class="val num" data-count="486200" data-prefix="$">$486,200</p>
+              </div>
+              <div class="tile pos">
+                <p class="lbl">Received Amount</p>
+                <p class="val num" data-count="341750" data-prefix="$">$341,750</p>
+              </div>
+              <div class="tile warn">
+                <p class="lbl">Outstanding Balance</p>
+                <p class="val num" data-count="144450" data-prefix="$">$144,450</p>
+              </div>
+              <div class="tile">
+                <p class="lbl">Scheduled Balance</p>
+                <p class="val num" data-count="96000" data-prefix="$">$96,000</p>
+              </div>
+            </div>
+            <div style="margin-top:14px; display:grid; gap:9px">
+              <div style="display:flex; justify-content:space-between; font-size:12px; color:var(--ink-3)"><span>Billed to date</span><span class="num">70%</span></div>
+              <div class="bar" style="--w:70%"><i></i></div>
+            </div>
+          </div>
+        </div>
+
+        <p class="prose" style="margin-top:14px">Below the tiles you'll find your open projects and your task list. There's a second row of tiles for the money going <em>out</em> — jobs and materials — which fills in once you start recording your own costs.</p>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section id="projects" class="rev">
+      <p class="eyebrow">The screens &middot; 02</p>
+      <div class="screen">
+        <div class="screen-top">
+          <h3>Projects</h3>
+          <span class="path">/projects</span>
+          <a class="open" href="https://kablanet.com/projects" target="_blank" rel="noopener">Open<span class="arw">&rarr;</span></a>
+        </div>
+        <p class="prose">One row per job. Open one and you get the whole story in a single page: what you agreed, what you've billed, what's been paid, plus your own costs, photos and documents for that job.</p>
+
+        <div class="mock" style="margin-top:16px">
+          <div class="mock-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="mock-title">Projects</span>
+            <span class="mock-tag">Sample figures</span>
+          </div>
+          <div class="mock-body scrollx">
+            <table class="mt">
+              <thead>
+                <tr><th>Project</th><th>Customer</th><th>Value</th><th>Billed</th><th></th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="name">Hillcrest Residence</td><td>Lux Builders</td>
+                  <td class="r num">$182,000</td><td class="r num">$146,000</td>
+                  <td style="width:96px"><div class="bar" style="--w:80%"><i></i></div></td>
+                </tr>
+                <tr>
+                  <td class="name">Maple Court Units 3&ndash;6</td><td>Northline Development</td>
+                  <td class="r num">$214,500</td><td class="r num">$128,700</td>
+                  <td><div class="bar" style="--w:60%"><i></i></div></td>
+                </tr>
+                <tr>
+                  <td class="name">Bayview Tenant Fit-Out</td><td>M. Alvarez</td>
+                  <td class="r num">$89,700</td><td class="r num">$67,050</td>
+                  <td><div class="bar" style="--w:75%"><i></i></div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <p class="prose" style="margin-top:14px">Your active projects are also listed straight down the left menu, so you can jump to a job from anywhere without going back to the list.</p>
+      </div>
+    </section>
+
+    <!-- ========== INVOICES ========== -->
+    <section id="invoices" class="rev">
+      <p class="eyebrow">The screens &middot; 03</p>
+      <div class="screen">
+        <div class="screen-top">
+          <h3>Invoices</h3>
+          <span class="path">/invoices</span>
+          <a class="open" href="https://kablanet.com/invoices" target="_blank" rel="noopener">Open<span class="arw">&rarr;</span></a>
+        </div>
+        <p class="prose">Every invoice you've issued — every project, every customer — in one list. Your account is set up in <strong>invoice mode</strong>: no contracts and no change orders, just invoices. If you do want a customer to sign one, tick <strong>Require Signature</strong> when you create it — but it's off unless you ask for it. Filter by project or status, and hit <strong>New Invoice</strong> to raise the next one.</p>
+
+        <div class="mock" style="margin-top:16px">
+          <div class="mock-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="mock-title">Invoices</span>
+            <span class="mock-tag">Sample figures</span>
+          </div>
+          <div class="mock-body">
+            <div class="mock-head-row">
+              <h5>Invoices</h5>
+              <span class="mock-btn">+ New Invoice</span>
+            </div>
+            <div class="scrollx">
+              <table class="mt">
+                <thead>
+                  <tr><th>#</th><th>Project</th><th>Title</th><th class="r">Total</th><th>Status</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td class="name num">1042</td><td>Hillcrest Residence</td><td>Progress billing &mdash; March</td><td class="r num">$38,400</td><td><span class="chip chip-pos">Received</span></td></tr>
+                  <tr><td class="name num">1043</td><td>Maple Court Units 3&ndash;6</td><td>Rough-in complete</td><td class="r num">$52,300</td><td><span class="chip chip-warn">Scheduled</span></td></tr>
+                  <tr><td class="name num">1044</td><td>Bayview Tenant Fit-Out</td><td>Final billing</td><td class="r num">$22,650</td><td><span class="chip chip-neutral">Draft</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <p class="prose" style="margin-top:14px">An invoice sits inside a project, and its lines feed everything else — the project's value, the dashboard tiles, and what shows up as owed to you. Bill it once here and you don't have to update anything anywhere else.</p>
+      </div>
+    </section>
+
+    <!-- ========== GETTING PAID ========== -->
+    <section id="paid" class="rev">
+      <p class="eyebrow">The screens &middot; 04</p>
+      <div class="screen">
+        <div class="screen-top">
+          <h3>Accounts Receivable</h3>
+          <span class="path">/accounts-receivable</span>
+          <a class="open" href="https://kablanet.com/accounts-receivable" target="_blank" rel="noopener">Open<span class="arw">&rarr;</span></a>
+        </div>
+        <p class="prose">The chase list. Everything you've billed and not been paid for, whoever the customer is, sorted by how long it's been sitting. Anything past 60 days is worth a phone call.</p>
+
+        <div class="mock" style="margin-top:16px">
+          <div class="mock-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="mock-title">Accounts Receivable &mdash; aging</span>
+            <span class="mock-tag">Sample figures</span>
+          </div>
+          <div class="mock-body">
+            <div class="aging">
+              <div class="aging-row"><span class="lab">0&ndash;30 Days</span><span class="aging-track a-ok" style="--w:82%"><i></i></span><span class="amt num">$58,900</span></div>
+              <div class="aging-row"><span class="lab">31&ndash;60 Days</span><span class="aging-track a-ok" style="--w:54%"><i></i></span><span class="amt num">$39,200</span></div>
+              <div class="aging-row"><span class="lab">61&ndash;90 Days</span><span class="aging-track a-warn" style="--w:31%"><i></i></span><span class="amt num">$22,400</span></div>
+              <div class="aging-row"><span class="lab">91&ndash;120 Days</span><span class="aging-track a-bad" style="--w:18%"><i></i></span><span class="amt num">$13,100</span></div>
+              <div class="aging-row"><span class="lab">120+ Days</span><span class="aging-track a-bad" style="--w:14%"><i></i></span><span class="amt num">$10,850</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="screen" style="margin-top:32px">
+        <div class="screen-top">
+          <h3>Payments</h3>
+          <span class="path">/payments</span>
+          <a class="open" href="https://kablanet.com/payments" target="_blank" rel="noopener">Open<span class="arw">&rarr;</span></a>
+        </div>
+        <p class="prose">When money actually arrives, record it here — or straight from the project's payment schedule. A payment moves from <strong>scheduled</strong> to <strong>received</strong>, and the moment it does, your dashboard and your aging list both correct themselves.</p>
+
+        <div class="mock" style="margin-top:16px">
+          <div class="mock-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="mock-title">Payments</span>
+            <span class="mock-tag">Sample figures</span>
+          </div>
+          <div class="mock-body scrollx">
+            <table class="mt">
+              <thead><tr><th>Project</th><th>Phase</th><th class="r">Amount</th><th>Due</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td class="name">Hillcrest Residence</td><td>Progress billing &mdash; March</td>
+                  <td class="r num">$38,400</td><td class="num">Mar 28</td>
+                  <td>
+                    <span class="cycle">
+                      <span class="s1 chip chip-warn">Scheduled</span>
+                      <span class="s2 chip chip-pos">Received</span>
+                    </span>
+                  </td>
+                </tr>
+                <tr><td class="name">Maple Court Units 3&ndash;6</td><td>Rough-in complete</td><td class="r num">$52,300</td><td class="num">Apr 12</td><td><span class="chip chip-warn">Scheduled</span></td></tr>
+                <tr><td class="name">Bayview Tenant Fit-Out</td><td>Deposit</td><td class="r num">$17,940</td><td class="num">Feb 03</td><td><span class="chip chip-pos">Received</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ESTIMATES ========== -->
+    <section id="estimates" class="rev">
+      <p class="eyebrow">The screens &middot; 05</p>
+      <div class="screen">
+        <div class="screen-top">
+          <h3>Estimates</h3>
+          <span class="path">/estimates/sent</span>
+          <a class="open" href="https://kablanet.com/estimates/sent" target="_blank" rel="noopener">Open<span class="arw">&rarr;</span></a>
+        </div>
+        <p class="prose">Work you've quoted but haven't won yet — for any customer. When one gets accepted, convert it into an invoice in a click rather than retyping the numbers, and mark the ones you lose so your pipeline stays honest.</p>
+
+        <div class="mock" style="margin-top:16px">
+          <div class="mock-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="mock-title">Sent Estimates</span>
+            <span class="mock-tag">Sample figures</span>
+          </div>
+          <div class="mock-body scrollx">
+            <table class="mt">
+              <thead><tr><th>#</th><th>Project</th><th class="r">Amount</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td class="name num">E-217</td><td>Ridgeline Duplex</td><td class="r num">$74,600</td><td><span class="chip chip-warn">Open</span></td></tr>
+                <tr><td class="name num">E-215</td><td>Hillcrest Residence</td><td class="r num">$182,000</td><td><span class="chip chip-pos">Converted</span></td></tr>
+                <tr><td class="name num">E-211</td><td>Old Mill Warehouse</td><td class="r num">$41,200</td><td><span class="chip chip-neg">Lost</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <p class="prose" style="margin-top:14px">Under the same <strong>Estimates</strong> menu you'll also find <strong>Received Estimates</strong> — prices your own subs and suppliers have quoted <em>you</em> — and <strong>Estimate Requests</strong> for sending a scope out to several of them at once.</p>
+      </div>
+    </section>
+
+    <!-- ========== COSTS ========== -->
+    <section id="costs" class="rev">
+      <div class="sec-head">
+        <p class="eyebrow">The screens &middot; 06</p>
+        <h2>The other half: what the job costs you</h2>
+        <p>Billing is one side of the job. This is the other: your own subcontractors, your suppliers and your crew's hours. Record them against a project and Kablanet gives you the number every trade business actually wants — what you kept.</p>
+      </div>
+
+      <div class="grid2">
+        <a class="mini" href="https://kablanet.com/contractors" target="_blank" rel="noopener">
+          <div class="mini-top">
+            <svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="5.6" r="2.4"/><path d="M2 13.4c0-2.2 1.8-3.4 4-3.4s4 1.2 4 3.4"/><path d="M10.6 3.6a2.4 2.4 0 0 1 0 4M11.4 10.3c1.6.3 2.6 1.4 2.6 3.1"/></svg>
+            <h4>Contractors</h4>
+          </div>
+          <p>Your own subs, with their trade, licence and contact details — and everything you've ever given them, in one place.</p>
+          <span class="path">/contractors</span>
+        </a>
+        <a class="mini" href="https://kablanet.com/jobs" target="_blank" rel="noopener">
+          <div class="mini-top">
+            <svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5.5h12V13H2z"/><path d="M5.6 5.5V3.6h4.8v1.9"/></svg>
+            <h4>Jobs</h4>
+          </div>
+          <p>Work you've handed to your own subcontractors, with what you agreed to pay them and what you've paid so far.</p>
+          <span class="path">/jobs</span>
+        </a>
+        <a class="mini" href="https://kablanet.com/suppliers" target="_blank" rel="noopener">
+          <div class="mini-top">
+            <svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 5.5 8 2.6l5.5 2.9v5L8 13.4 2.5 10.5z"/><path d="M2.5 5.5 8 8.4l5.5-2.9M8 8.4v5"/></svg>
+            <h4>Suppliers &amp; materials</h4>
+          </div>
+          <p>Material invoices from your suppliers, logged against the project that used them.</p>
+          <span class="path">/suppliers</span>
+        </a>
+        <a class="mini" href="https://kablanet.com/accounts-payable" target="_blank" rel="noopener">
+          <div class="mini-top">
+            <svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M8 4.6v6.8M6.2 6.2h3.2a1.4 1.4 0 0 1 0 2.8H6.6a1.4 1.4 0 0 0 0 2.8h3.2"/></svg>
+            <h4>Accounts Payable</h4>
+          </div>
+          <p>The mirror image of your receivables: what you owe your subs and suppliers, and when it's due.</p>
+          <span class="path">/accounts-payable</span>
+        </a>
+        <a class="mini span2" href="https://kablanet.com/price-list" target="_blank" rel="noopener">
+          <div class="mini-top">
+            <svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.4 2H14v5.6L7.4 14 2 8.6z"/><circle cx="11" cy="5" r="1"/></svg>
+            <h4>Price List</h4>
+          </div>
+          <p>Your standard scopes and rates, saved once. Drop them into an estimate or invoice instead of writing them out again.</p>
+          <span class="path">/price-list</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== EXTRAS ========== -->
+    <section id="extras" class="rev">
+      <div class="sec-head">
+        <p class="eyebrow">The screens &middot; 07</p>
+        <h2>Everything else in the menu</h2>
+        <p>Worth knowing exists. None of it needs setting up before you can start working.</p>
+      </div>
+
+      <div class="grid2">
+        <a class="mini" href="https://kablanet.com/customers" target="_blank" rel="noopener">
+          <div class="mini-top">
+            <svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="5.6" r="2.4"/><path d="M2 13.4c0-2.2 1.8-3.4 4-3.4s4 1.2 4 3.4"/><path d="M10.6 3.6a2.4 2.4 0 0 1 0 4M11.4 10.3c1.6.3 2.6 1.4 2.6 3.1"/></svg>
+            <h4>Customers</h4>
+          </div>
+          <p>Everyone you bill. A couple are in the list already — add the rest and run their jobs through Kablanet the same way.</p>
+          <span class="path">/customers</span>
+        </a>
+        <a class="mini" href="https://kablanet.com/time-tracking" target="_blank" rel="noopener">
+          <div class="mini-top">
+            <svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M8 4.6V8l2.4 1.6"/></svg>
+            <h4>Time Tracking</h4>
+          </div>
+          <p>Clock your crew in and out against a project, so labour lands in the job cost instead of a notebook.</p>
+          <span class="path">/time-tracking</span>
+        </a>
+        <a class="mini" href="https://kablanet.com/emails" target="_blank" rel="noopener">
+          <div class="mini-top">
+            <svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h12v8H2z"/><path d="m2 4.6 6 4 6-4"/></svg>
+            <h4>Emails</h4>
+          </div>
+          <p>A record of what Kablanet has sent on your behalf, so you can prove an invoice went out and when.</p>
+          <span class="path">/emails</span>
+        </a>
+        <a class="mini" href="https://kablanet.com/settings?tab=user" target="_blank" rel="noopener">
+          <div class="mini-top">
+            <svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="2.2"/><path d="M12.9 9.8a1.2 1.2 0 0 0 .24 1.32l.04.05a1.45 1.45 0 1 1-2.05 2.05l-.05-.04a1.2 1.2 0 0 0-2.03.86v.12a1.45 1.45 0 1 1-2.9 0v-.06a1.2 1.2 0 0 0-2.1-.8l-.05.04A1.45 1.45 0 1 1 1.95 11.3l.04-.05a1.2 1.2 0 0 0-.86-2.03H1a1.45 1.45 0 1 1 0-2.9h.06a1.2 1.2 0 0 0 .8-2.1l-.04-.05A1.45 1.45 0 1 1 3.87 2.2l.05.04a1.2 1.2 0 0 0 2.03-.86V1.3a1.45 1.45 0 0 1 2.9 0v.06a1.2 1.2 0 0 0 2.03.86l.05-.04a1.45 1.45 0 1 1 2.05 2.05l-.04.05a1.2 1.2 0 0 0 .86 2.03H15a1.45 1.45 0 0 1 0 2.9h-.06a1.2 1.2 0 0 0-1.04.6z"/></svg>
+            <h4>Settings</h4>
+          </div>
+          <p>Your password, your company details and logo, your team, payment methods and statuses.</p>
+          <span class="path">/settings</span>
+        </a>
+      </div>
+
+      <div class="card pad" style="margin-top:16px; display:flex; flex-wrap:wrap; gap:14px; align-items:center">
+        <svg width="22" height="22" viewBox="0 0 16 16" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M2.6 3.2C4.4 2.4 6.4 2.6 8 3.8c1.6-1.2 3.6-1.4 5.4-.6v9c-1.8-.8-3.8-.6-5.4.6-1.6-1.2-3.6-1.4-5.4-.6z"/><path d="M8 3.8v9"/></svg>
+        <div style="flex:1 1 260px">
+          <h4 style="font-size:16px; font-weight:600">There's a full manual inside the app</h4>
+          <p style="color:var(--ink-2); font-size:14.5px; margin-top:4px">Click <strong>Help</strong> at the bottom of the left menu for step-by-step articles on every screen — and to send us a question without leaving Kablanet.</p>
+        </div>
+        <a class="btn btn-primary" href="https://kablanet.com/help" target="_blank" rel="noopener" style="flex:none">Open Help</a>
+      </div>
+    </section>
+
+    <!-- ========== CHECKLIST ========== -->
+    <section id="checklist" class="rev">
+      <div class="sec-head">
+        <p class="eyebrow">Your first 15 minutes</p>
+        <h2>Six things to do today</h2>
+        <p>Do these in order and you'll know your way around. Tick them off here as you go — this list remembers where you got to.</p>
+      </div>
+
+      <div class="card check-wrap">
+        <div class="progress-line">
+          <span class="bar" aria-hidden="true"><i id="pbar"></i></span>
+          <span class="count" id="pcount">0 of 7 done</span>
+        </div>
+        <ul class="tasks" id="tasks">
+          <li><label><input type="checkbox"><span class="t-b"><strong>Sign in and change your password</strong><span>Settings &rarr; User Settings &rarr; Change Password.</span></span></label></li>
+          <li><label><input type="checkbox"><span class="t-b"><strong>Check your company details</strong><span>Name, address, phone, licence number and logo — they print on the documents you send.</span></span></label></li>
+          <li><label><input type="checkbox"><span class="t-b"><strong>Open one project you know well</strong><span>Compare the value and the payments against your own records.</span></span></label></li>
+          <li><label><input type="checkbox"><span class="t-b"><strong>Look at Accounts Receivable</strong><span>See what's owed to you and how old it is. This is the screen you'll use most.</span></span></label></li>
+          <li><label><input type="checkbox"><span class="t-b"><strong>Raise one test invoice</strong><span>Use the Demo Project to feel the flow end to end, then delete it.</span></span></label></li>
+          <li><label><input type="checkbox"><span class="t-b"><strong>Add something of your own</strong><span>One of your customers, or one of your subcontractors. That's the moment it stops being a demo and starts being your books.</span></span></label></li>
+          <li><label><input type="checkbox"><span class="t-b"><strong>Tell us what looks wrong</strong><span>Anything that doesn't match your books — send it over while it's fresh.</span></span></label></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section id="questions" class="rev">
+      <div class="sec-head">
+        <p class="eyebrow">Straight answers</p>
+        <h2>The questions everyone asks</h2>
+      </div>
+
+      <div class="faq">
+        <details class="q">
+          <summary>Is this only for the jobs you pre-loaded?</summary>
+          <div class="a"><p>No — those are a head start, nothing more. Kablanet is built to run your whole business: every customer you bill, every subcontractor you hire, every supplier you buy from. The more of it you put in, the more the numbers on your dashboard are actually your numbers.</p></div>
+        </details>
+        <details class="q">
+          <summary>Can my customers see inside my account?</summary>
+          <div class="a"><p>No. Your records are yours — another company can't sign in to your account or read your figures, and what you add is invisible to them. A customer only ever sees a document you deliberately send them. The only people who can get in for support are the Kablanet team.</p></div>
+        </details>
+        <details class="q">
+          <summary>Can I use it for my own subs and suppliers too?</summary>
+          <div class="a"><p>That's half of what it's for. Add your subcontractors and give them jobs on a project; log your material invoices against the same project. Accounts Payable then shows what you owe and when — the mirror image of what you're chasing.</p></div>
+        </details>
+        <details class="q">
+          <summary>A number doesn't match my records. What now?</summary>
+          <div class="a"><p>If it's in the work we pre-loaded, tell us rather than editing around it — we copied that from the shared job records, so if something is off it's worth tracing back to the source. Anything you enter yourself, you can simply fix.</p></div>
+        </details>
+        <details class="q">
+          <summary>Does it work on my phone?</summary>
+          <div class="a"><p>Yes. It's a website, not an app you install — open kablanet.com in your phone's browser and sign in. Add it to your home screen if you want it a tap away. The screens are built for a phone as well as a laptop.</p></div>
+        </details>
+        <details class="q">
+          <summary>Can my office manager or bookkeeper have their own login?</summary>
+          <div class="a"><p>Yes, and they should — you're the admin of your company, so you can invite your people in Settings and choose how much each of them sees. Don't share one password around.</p></div>
+        </details>
+        <details class="q">
+          <summary>Do I have to sign anything, or chase signatures?</summary>
+          <div class="a"><p>Not unless you want to. Your account is set up in invoice mode, so there are no contracts or change orders to sign. An invoice can be sent out for signature if you tick <strong>Require Signature</strong> when you create it — your customer signs it in their browser and you counter-sign — but nothing requires it, and it's off by default.</p></div>
+        </details>
+      </div>
+
+      <div class="card pad" style="margin-top:22px">
+        <p class="eyebrow">If you get stuck</p>
+        <h4 style="font-size:18px; margin-top:8px">Ask us — we'd rather hear from you early</h4>
+        <p class="prose" style="margin-top:8px">Use <strong>Help</strong> in the app to send a question with your account attached, so we can see exactly what you're looking at. Or reply to the email that brought you here.</p>
+        <div class="hero-cta" style="margin-top:18px">
+          <a class="btn btn-primary" href="https://kablanet.com/help" target="_blank" rel="noopener">Open Help &amp; Support</a>
+          <a class="btn" style="border-color:var(--line); color:var(--ink)" href="https://kablanet.com/login" target="_blank" rel="noopener">Sign in</a>
+        </div>
+      </div>
+
+      <div class="foot">
+        <span class="brand">Kablanet</span>
+        <span>Welcome guide for new Kablanet companies</span>
+        <span style="margin-left:auto">Figures shown on this page are samples, not your account.</span>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  try {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce) root.classList.add('js-anim');
+
+  /* ---- reveal on scroll + trigger inner animations ---- */
+  var revealed = function (el) {
+    el.classList.add('in');
+    el.querySelectorAll('[data-count]').forEach(countUp);
+  };
+  var targets = document.querySelectorAll('.rev, .mock');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { revealed(e.target); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.12 });
+    targets.forEach(function (t) { io.observe(t); });
+  } else {
+    targets.forEach(revealed);
+  }
+
+  /* ---- count-up (falls back to the printed value) ---- */
+  function countUp(el) {
+    if (el.dataset.done) return;
+    el.dataset.done = '1';
+    if (reduce) return;
+    var end = parseFloat(el.getAttribute('data-count'));
+    var prefix = el.getAttribute('data-prefix') || '';
+    if (isNaN(end)) return;
+    var dur = 900, t0 = null;
+    function frame(ts) {
+      if (t0 === null) t0 = ts;
+      var p = Math.min((ts - t0) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = prefix + Math.round(end * eased).toLocaleString('en-US');
+      if (p < 1) requestAnimationFrame(frame);
+    }
+    el.textContent = prefix + '0';
+    requestAnimationFrame(frame);
+  }
+
+  /* ---- scroll spy on the spine ---- */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.spine a'));
+  var sections = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+  function spy() {
+    var y = 140, best = 0;
+    sections.forEach(function (s, i) { if (s && s.getBoundingClientRect().top <= y) best = i; });
+    links.forEach(function (a, i) { a.classList.toggle('active', i === best); });
+  }
+  var ticking = false;
+  window.addEventListener('scroll', function () {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () { spy(); ticking = false; });
+  }, { passive: true });
+  spy();
+
+  /* ---- checklist with local memory ---- */
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('#tasks input'));
+  var bar = document.getElementById('pbar');
+  var count = document.getElementById('pcount');
+  var KEY = 'kablanet-welcome-checklist';
+  function read() {
+    try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch (e) { return []; }
+  }
+  function write(v) {
+    try { localStorage.setItem(KEY, JSON.stringify(v)); } catch (e) { /* private mode */ }
+  }
+  function paint() {
+    var done = boxes.filter(function (b) { return b.checked; }).length;
+    bar.style.width = Math.round((done / boxes.length) * 100) + '%';
+    count.textContent = done + ' of ' + boxes.length + ' done';
+  }
+  var saved = read();
+  boxes.forEach(function (b, i) {
+    if (saved[i]) b.checked = true;
+    b.addEventListener('change', function () {
+      write(boxes.map(function (x) { return x.checked; }));
+      paint();
+    });
+  });
+  paint();
+  } catch (err) {
+    /* never leave the page hidden behind a failed animation */
+    document.documentElement.classList.remove('js-anim');
+  }
+})();
+</script>

@@ -1,0 +1,114 @@
+{
+ "setup-company": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch03.mp4",
+  "duration": "0:43"
+ },
+ "setup-signature": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch04.mp4",
+  "duration": "0:35"
+ },
+ "setup-price-list": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch05.mp4",
+  "duration": "0:38"
+ },
+ "dashboard": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch06.mp4",
+  "duration": "0:43"
+ },
+ "projects": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch07.mp4",
+  "duration": "0:38"
+ },
+ "project-detail": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch08.mp4",
+  "duration": "0:47"
+ },
+ "invoices": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch17.mp4",
+  "duration": "0:37"
+ },
+ "accounts-receivable": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch18.mp4",
+  "duration": "0:48"
+ },
+ "payments": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch19.mp4",
+  "duration": "0:41"
+ },
+ "contractors": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch21.mp4",
+  "duration": "0:33"
+ },
+ "suppliers": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch22.mp4",
+  "duration": "0:31"
+ },
+ "jobs": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch20.mp4",
+  "duration": "0:38"
+ },
+ "accounts-payable": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch23.mp4",
+  "duration": "0:45"
+ },
+ "price-list": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch05.mp4",
+  "duration": "0:38"
+ },
+ "estimates-sent": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch24.mp4",
+  "duration": "0:36"
+ },
+ "estimates-received": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch26.mp4",
+  "duration": "0:30"
+ },
+ "estimate-requests": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch25.mp4",
+  "duration": "0:36"
+ },
+ "time-tracking": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch27.mp4",
+  "duration": "0:33"
+ },
+ "emails": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch28.mp4",
+  "duration": "0:35"
+ },
+ "settings": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch29.mp4",
+  "duration": "0:34"
+ },
+ "help": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch30.mp4",
+  "duration": "0:29"
+ },
+ "flow-1": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch09.mp4",
+  "duration": "0:43"
+ },
+ "flow-2": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch10.mp4",
+  "duration": "0:40"
+ },
+ "flow-3": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch11.mp4",
+  "duration": "0:33"
+ },
+ "flow-4": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch12.mp4",
+  "duration": "0:42"
+ },
+ "flow-5": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch13.mp4",
+  "duration": "0:44"
+ },
+ "flow-6": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch14.mp4",
+  "duration": "0:33"
+ },
+ "flow-7": {
+  "url": "https://raw.githubusercontent.com/guywein74/kablanet-tutorial-video/main/final/ch16.mp4",
+  "duration": "0:54"
+ }
+}
