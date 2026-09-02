@@ -1,114 +1,142 @@
 {
  "setup-company": {
   "url": "./final/ch03.mp4",
-  "duration": "0:43"
+  "duration": "0:43",
+  "poster": "./posters/ch03.jpg"
  },
  "setup-signature": {
   "url": "./final/ch04.mp4",
-  "duration": "0:35"
+  "duration": "0:35",
+  "poster": "./posters/ch04.jpg"
  },
  "setup-price-list": {
   "url": "./final/ch05.mp4",
-  "duration": "0:38"
+  "duration": "0:38",
+  "poster": "./posters/ch05.jpg"
  },
  "dashboard": {
   "url": "./final/ch06.mp4",
-  "duration": "0:43"
+  "duration": "0:43",
+  "poster": "./posters/ch06.jpg"
  },
  "projects": {
   "url": "./final/ch07.mp4",
-  "duration": "0:38"
+  "duration": "0:38",
+  "poster": "./posters/ch07.jpg"
  },
  "project-detail": {
   "url": "./final/ch08.mp4",
-  "duration": "0:47"
+  "duration": "0:47",
+  "poster": "./posters/ch08.jpg"
  },
  "invoices": {
   "url": "./final/ch17.mp4",
-  "duration": "0:37"
+  "duration": "0:37",
+  "poster": "./posters/ch17.jpg"
  },
  "accounts-receivable": {
   "url": "./final/ch18.mp4",
-  "duration": "0:48"
+  "duration": "0:48",
+  "poster": "./posters/ch18.jpg"
  },
  "payments": {
   "url": "./final/ch19.mp4",
-  "duration": "0:41"
+  "duration": "0:41",
+  "poster": "./posters/ch19.jpg"
  },
  "contractors": {
   "url": "./final/ch21.mp4",
-  "duration": "0:33"
+  "duration": "0:33",
+  "poster": "./posters/ch21.jpg"
  },
  "suppliers": {
   "url": "./final/ch22.mp4",
-  "duration": "0:31"
+  "duration": "0:31",
+  "poster": "./posters/ch22.jpg"
  },
  "jobs": {
   "url": "./final/ch20.mp4",
-  "duration": "0:38"
+  "duration": "0:38",
+  "poster": "./posters/ch20.jpg"
  },
  "accounts-payable": {
   "url": "./final/ch23.mp4",
-  "duration": "0:45"
+  "duration": "0:45",
+  "poster": "./posters/ch23.jpg"
  },
  "price-list": {
   "url": "./final/ch05.mp4",
-  "duration": "0:38"
+  "duration": "0:38",
+  "poster": "./posters/ch05.jpg"
  },
  "estimates-sent": {
   "url": "./final/ch24.mp4",
-  "duration": "0:36"
+  "duration": "0:36",
+  "poster": "./posters/ch24.jpg"
  },
  "estimates-received": {
   "url": "./final/ch26.mp4",
-  "duration": "0:30"
+  "duration": "0:30",
+  "poster": "./posters/ch26.jpg"
  },
  "estimate-requests": {
   "url": "./final/ch25.mp4",
-  "duration": "0:36"
+  "duration": "0:36",
+  "poster": "./posters/ch25.jpg"
  },
  "time-tracking": {
   "url": "./final/ch27.mp4",
-  "duration": "0:33"
+  "duration": "0:33",
+  "poster": "./posters/ch27.jpg"
  },
  "emails": {
   "url": "./final/ch28.mp4",
-  "duration": "0:35"
+  "duration": "0:35",
+  "poster": "./posters/ch28.jpg"
  },
  "settings": {
   "url": "./final/ch29.mp4",
-  "duration": "0:34"
+  "duration": "0:34",
+  "poster": "./posters/ch29.jpg"
  },
  "help": {
   "url": "./final/ch30.mp4",
-  "duration": "0:29"
+  "duration": "0:29",
+  "poster": "./posters/ch30.jpg"
  },
  "flow-1": {
   "url": "./final/ch09.mp4",
-  "duration": "0:43"
+  "duration": "0:43",
+  "poster": "./posters/ch09.jpg"
  },
  "flow-2": {
   "url": "./final/ch10.mp4",
-  "duration": "0:40"
+  "duration": "0:40",
+  "poster": "./posters/ch10.jpg"
  },
  "flow-3": {
   "url": "./final/ch11.mp4",
-  "duration": "0:33"
+  "duration": "0:33",
+  "poster": "./posters/ch11.jpg"
  },
  "flow-4": {
   "url": "./final/ch12.mp4",
-  "duration": "0:42"
+  "duration": "0:42",
+  "poster": "./posters/ch12.jpg"
  },
  "flow-5": {
   "url": "./final/ch13.mp4",
-  "duration": "0:44"
+  "duration": "0:44",
+  "poster": "./posters/ch13.jpg"
  },
  "flow-6": {
   "url": "./final/ch14.mp4",
-  "duration": "0:33"
+  "duration": "0:33",
+  "poster": "./posters/ch14.jpg"
  },
  "flow-7": {
   "url": "./final/ch16.mp4",
-  "duration": "0:54"
+  "duration": "0:54",
+  "poster": "./posters/ch16.jpg"
  }
 }

@@ -190,7 +190,7 @@ def clip_html(p):
     if c and c.get("url"):
         poster = ' poster="%s"' % html.escape(c["poster"]) if c.get("poster") else ""
         dur = ('<span class="dur">%s</span>' % html.escape(c["duration"])) if c.get("duration") else ""
-        return ('<div class="clip"><video controls preload="metadata" playsinline%s>'
+        return ('<div class="clip"><video controls preload="none" playsinline%s>'
                 '<source src="%s" type="video/mp4"></video>%s</div>'
                 % (poster, html.escape(c["url"]), dur))
     return ('<div class="clip"><div class="pending"><span class="slate"></span>'
