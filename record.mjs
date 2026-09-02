@@ -509,21 +509,28 @@ const CLIPS = {
   ch10: {
     route: '/projects/a9c45c60-b85f-4360-8001-fce9c41565f6',
     async run(page, d) {
+      async function waitMoveText(text, ms = 600) {
+        const loc = page.getByText(text, { exact: true }).first();
+        try { await loc.waitFor({ state: 'visible', timeout: 6000 }); } catch { console.error('  ! wait failed:', text); return null; }
+        await loc.scrollIntoViewIfNeeded({ timeout: 3000 }).catch(() => {});
+        const box = await loc.boundingBox().catch(() => null);
+        if (!box) return null;
+        await d.moveTo(box.x + box.width / 2, box.y + box.height / 2, ms);
+        return loc;
+      }
       await d.hold(2500);
       await d.scrollTo(1150, 500);
       await d.hold(500);
       const inv = await d.moveToText('Podium framing — Levels 1 to 3', 700);
       if (inv) await d.click();
       await d.until(5.0);
-      const sig = await d.moveToText('SIGNEES', 700);
-      if (!sig) await d.scrollTo(1600, 700);
+      await waitMoveText('SIGNEES', 700);
       await d.until(14.0);
-      await d.moveToText('Jen Okafor', 700);
+      await waitMoveText('Jen Okafor', 700);
       await d.until(20.0);
-      const email = await d.moveToText('guywein@gmail.com', 700);
-      if (!email) await d.moveToEl('input[value*="guywein"]', 700);
+      await waitMoveText('guywein@gmail.com', 700);
       await d.until(28.0);
-      await d.moveToText('CONTRACTOR DETAILS', 700);
+      await waitMoveText('CONTRACTOR DETAILS', 700);
       await d.until(35.0);
       await d.press('Escape');
       await d.until(41.6);
