@@ -444,167 +444,164 @@ const CLIPS = {
     },
   },
   ch09: {
-    route: '/projects',
+    route: '/projects/a9c45c60-b85f-4360-8001-fce9c41565f6',
     async run(page, d) {
-      await d.until(1.0);
-      const row = await d.moveToEl('table tbody tr:first-child', 600);
-      if (row) { await d.click(); await d.until(2.5); }
+      // waitMove: wait (long timeout) for an element to actually be attached/visible,
+      // THEN glide the cursor there for the recording. Decouples reliability from pacing.
+      async function waitMove(sel, ms = 600, idx = -1) {
+        const loc = idx >= 0 ? page.locator(sel).nth(idx) : page.locator(sel).first();
+        try { await loc.waitFor({ state: 'visible', timeout: 8000 }); } catch { console.error('  ! wait failed:', sel); return null; }
+        await loc.scrollIntoViewIfNeeded({ timeout: 3000 }).catch(() => {});
+        const box = await loc.boundingBox().catch(() => null);
+        if (!box) { console.error('  ! no box:', sel); return null; }
+        await d.moveTo(box.x + box.width / 2, box.y + box.height / 2, ms);
+        return loc;
+      }
+
+      await d.until(2.0);
       await d.scrollTo(1150, 700);
       await d.until(3.5);
-      const addInv = await d.moveToEl('button:has-text("Add Invoice")', 600);
-      if (addInv) { await d.click(); }
+      let el = await waitMove('button:has-text("Add Invoice")', 600);
+      if (el) await d.click();
       await d.until(4.43);
-      await d.moveToEl('input[placeholder^="e.g. Plans"]', 600);
-      await d.click();
-      await d.type('Podium framing — Levels 1 to 3');
+      el = await waitMove('input[placeholder^="e.g. Plans"]', 600);
+      if (el) { await d.click(); await d.type('Podium framing — Levels 1 to 3'); }
       await d.until(10.93);
-      await d.moveToEl('input[placeholder="Auto-assigned if blank"]', 500);
+      await waitMove('input[placeholder="Auto-assigned if blank"]', 500);
       await d.until(15.43);
-      const addAsm = await d.moveToEl('button:has-text("Add Assembly")', 600);
-      if (addAsm) { await d.click(); await d.until(17.0);
-        await d.moveToText('Multifamily podium package', 500); await d.click(); }
+      el = await waitMove('button:has-text("Add Pricing")', 600);
+      if (el) {
+        await d.click();
+        el = await waitMove('input[placeholder="Search by name or description…"]', 500);
+        if (el) { await d.click(); await d.type('Podium framing — Levels 1 to 3'); await d.hold(500); }
+        el = await waitMove('text=Podium framing — Levels 1 to 3', 500);
+        if (el) await d.click();
+        el = await waitMove('button:has-text("Add Selected")', 500);
+        if (el) await d.click();
+      }
       await d.until(25.86);
       await d.scrollTo(420, 600);
       await d.until(28.52);
       await d.scrollTo(880, 600);
+      // real payment schedule rows: 65900 / 65900 / 32950 -> $164,750
+      const rows = [['Deposit on execution', '65900'], ['Level 1 and 2 complete', '65900'], ['Final — Level 3 complete and inspected', '32950']];
+      for (let i = 0; i < rows.length; i++) {
+        const [desc, amt] = rows[i];
+        el = await waitMove('button:has-text("Add Payment")', 500);
+        if (el) {
+          await d.click();
+          el = await waitMove('textarea[placeholder="e.g. Deposit, Mid-project"]', 450, i);
+          if (el) { await d.click(); await d.type(desc); }
+          el = await waitMove('input[placeholder="0.00"]', 450, i);
+          if (el) { await d.click(); await d.type(amt); }
+        }
+      }
       await d.until(34.66);
-      const reqSig = await d.moveToEl('#require_signature', 500);
-      if (reqSig) await d.click();
+      el = await waitMove('#require_signature', 500);
+      if (el) await d.click();
       await d.until(40.41);
-      await d.moveToEl('button:has-text("Cancel")', 500);
-      await d.until(41.5);
-      await d.press('Escape');
+      el = await waitMove('button:has-text("Create & Open Signing Editor"), button:has-text("Create Invoice")', 600);
+      if (el) await d.click();
+      await d.hold(1200);
       await d.until(45.0);
     },
   },
   ch10: {
-    route: '/invoices',
+    route: '/projects/a9c45c60-b85f-4360-8001-fce9c41565f6',
     async run(page, d) {
-      await d.until(1.0);
-      await d.moveToEl('h2', 600);
-      await d.until(3.23);
-      const row = await d.moveToEl('tbody tr:first-child', 700);
-      if (row) { await d.click(); }
-      await d.until(8.0);
-      await d.moveTo(1080, 320, 800);
-      await d.until(12.33);
-      const sig = await d.moveToEl(':is(h2,h3,h4):has-text("Signees")', 700);
-      if (!sig) await d.scrollTo(1400, 700);
-      await d.until(18.17);
-      const addSignee = await d.moveToEl('button:has-text("Add signee")', 550);
-      if (addSignee) await d.click();
-      await d.moveToEl('input[placeholder="Full name"]', 500);
-      if (addSignee) { await d.click(); await d.type('Jen Okafor'); }
-      await d.until(27.47);
-      await d.scrollTo(1900, 600);
-      await d.until(33.03);
-      const reqBox = await d.moveToText('Require signature', 600);
-      if (reqBox) await d.click();
-      await d.until(38.0);
+      await d.hold(2500);
+      await d.scrollTo(1150, 500);
+      await d.hold(500);
+      const inv = await d.moveToText('Podium framing — Levels 1 to 3', 700);
+      if (inv) await d.click();
+      await d.until(5.0);
+      const sig = await d.moveToText('SIGNEES', 700);
+      if (!sig) await d.scrollTo(1600, 700);
+      await d.until(14.0);
+      await d.moveToText('Jen Okafor', 700);
+      await d.until(20.0);
+      const email = await d.moveToText('guywein@gmail.com', 700);
+      if (!email) await d.moveToEl('input[value*="guywein"]', 700);
+      await d.until(28.0);
+      await d.moveToText('CONTRACTOR DETAILS', 700);
+      await d.until(35.0);
       await d.press('Escape');
       await d.until(41.6);
     },
   },
   ch11: {
-    route: '/invoices',
+    route: '/projects/a9c45c60-b85f-4360-8001-fce9c41565f6',
     async run(page, d) {
       await d.until(1.0);
-      await d.moveToEl('h2', 600);
-      await d.until(2.99);
-      const newInv = await d.moveToEl('button:has-text("New Invoice")', 600);
-      if (newInv) { await d.click(); await d.until(5.5); await d.press('Escape'); }
-      await d.until(9.94);
-      const statusBtn = await d.moveToEl('button:has-text("All statuses")', 600);
-      if (statusBtn) { await d.click(); await d.until(12.5); await d.press('Escape'); }
-      await d.until(19.39);
-      const sigBtn = await d.moveToEl('button:has-text("All signature statuses")', 650);
-      if (sigBtn) { await d.click(); await d.until(22.5); await d.press('Escape'); }
-      await d.until(25.68);
-      const r1 = await d.moveToText('Awaiting Signees', 700);
-      if (r1) await d.click();
-      await d.until(27.5);
-      await d.press('Escape');
-      await d.until(29.67);
-      const r2 = await d.moveToText('Fully Executed', 650);
-      if (r2) await d.click();
-      await d.until(32.5);
-      await d.press('Escape');
+      await d.scrollTo(1150, 700);
+      await d.until(4.0);
+      const row = await d.moveToText('Awaiting signature — excluded from financial totals', 700);
+      if (!row) await d.moveToText('Podium framing — Levels 1 to 3', 700);
+      await d.until(12.0);
+      await d.moveToText('Awaiting Signees', 700);
+      await d.until(20.0);
+      // switch to invoices list to show emails/status at a glance
+      await page.goto(page.url().split('/projects')[0] + '/invoices', { waitUntil: 'domcontentloaded' });
+      await page.waitForTimeout(1200);
+      await d.ensure();
+      await d.until(27.0);
+      const search = await d.moveToEl('input[placeholder="Search contracts..."]', 600);
+      if (search) { await d.click(); await d.type('7248'); }
       await d.until(34.9);
     },
   },
   ch12: {
-    route: '/invoices',
+    route: '/projects/a9c45c60-b85f-4360-8001-fce9c41565f6',
     async run(page, d) {
       await d.until(1.0);
-      const fe1 = await d.moveToText('Fully Executed', 700);
-      if (fe1) { await d.click(); await d.until(4.5); await d.press('Escape'); }
-      await d.until(11.79);
-      await d.moveToEl('h2', 500);
-      await d.until(15.23);
-      await d.moveToText('Awaiting Signees', 800);
-      await d.until(17.95);
-      const docBtn = await d.moveToEl('tbody tr:first-child button[title*="Documents" i]', 600);
-      if (docBtn) { await d.click(); await d.until(21.0); await d.press('Escape'); }
-      await d.until(28.79);
+      await d.scrollTo(1150, 700);
+      await d.until(6.0);
       await d.moveToText('Fully Executed', 700);
-      await d.until(36.49);
-      await d.moveToText('Signed outside system', 700);
+      await d.until(14.0);
+      const inv = await d.moveToText('Podium framing — Levels 1 to 3', 700);
+      if (inv) await d.click();
+      await d.until(24.0);
+      await d.moveToText('CONTRACTOR DETAILS', 700);
+      await d.until(32.0);
+      await d.moveToText('Signed 09/02/2026', 700);
+      await d.until(38.0);
+      await d.press('Escape');
       await d.until(43.0);
     },
   },
   ch13: {
-    route: '/projects',
+    route: '/projects/a9c45c60-b85f-4360-8001-fce9c41565f6',
     async run(page, d) {
       await d.until(1.0);
-      let row = await d.moveToText('Harborview — Camarillo St 12-Unit', 600);
-      if (!row) row = await d.moveToEl('table tbody tr:first-child', 600);
-      if (row) { await d.click(); await d.until(2.5); }
-      await d.scrollTo(1150, 700);
-      await d.until(3.75);
+      await d.scrollTo(1900, 700);
+      await d.until(6.0);
       await d.moveToText('Payment Schedule', 700);
-      await d.until(7.5);
-      const payBtn = await d.moveToEl('tr:has-text("Deposit") button[title*="payment" i], tr:first-child button[title*="payment" i]', 700);
-      if (payBtn) { await d.click(); await d.until(13.0); await d.press('Escape'); }
-      await d.until(16.1);
-      await d.moveTo(720, 220, 700);
+      await d.until(12.0);
+      const expand = await d.moveToEl('table tbody tr:first-child button, table tbody tr:first-child svg', 600);
+      if (expand) await d.click();
       await d.until(21.21);
-      await d.moveTo(400, 260, 700);
-      // cut
+      await d.moveToText('Check #2214', 700);
+      await d.until(30.52);
+      // cut to AR
       await page.goto(page.url().split('/projects')[0] + '/accounts-receivable', { waitUntil: 'domcontentloaded' });
       await page.waitForTimeout(1200);
       await d.ensure();
-      await d.until(30.52);
-      await d.moveToText('Received Amount', 700);
       await d.until(38.57);
-      await d.moveToText('0-30 Days', 600);
+      await d.moveToText('Brightline — Culver Mixed-Use Podium', 700);
       await d.until(44.7);
     },
   },
   ch14: {
-    route: '/projects',
+    route: '/projects/a9c45c60-b85f-4360-8001-fce9c41565f6',
     async run(page, d) {
       await d.until(1.0);
-      const row = await d.moveToEl('table tbody tr:first-child', 600);
-      if (row) { await d.click(); await d.until(2.5); }
-      await d.scrollTo(1950, 700);
-      await d.until(4.0);
-      await d.moveToText('Jobs', 700);
+      await d.scrollTo(2400, 700);
       await d.until(6.0);
-      const addJob = await d.moveToEl('button:has-text("Add Job")', 650);
-      if (addJob) { await d.click(); await d.until(8.0);
-        const nameField = await d.moveToEl('input[placeholder*="e.g." i]', 500);
-        if (nameField) { await d.click(); await d.type('Crane and rigging — podium beam set'); } }
+      await d.moveToText('Jobs', 700);
       await d.until(11.66);
-      const contractorSel = await d.moveToEl('button[role="combobox"], [role="combobox"]', 600);
-      if (contractorSel) await d.click();
-      await d.until(13.5);
-      if (contractorSel) await d.press('Escape');
-      await d.until(14.93);
-      const totalField = await d.moveToEl('input[type="number"]', 500);
-      if (totalField) { await d.click(); await d.type('23900'); }
-      await d.until(23.02);
-      await d.moveToEl('button:has-text("Cancel")', 500);
-      await d.press('Escape');
+      await d.moveToText('Crane and rigging — podium beam set', 700);
+      await d.until(18.0);
+      await d.moveToText('Delgado Crane Service', 700);
       await d.until(24.5);
       await d.moveToText('Contractors', 600);
       await d.until(28.5);
@@ -613,28 +610,20 @@ const CLIPS = {
     },
   },
   ch15: {
-    route: '/projects',
+    route: '/projects/a9c45c60-b85f-4360-8001-fce9c41565f6',
     async run(page, d) {
       await d.until(1.0);
-      const row = await d.moveToEl('table tbody tr:first-child', 600);
-      if (row) { await d.click(); await d.until(2.5); }
-      await d.scrollTo(1950, 700);
-      await d.until(4.74);
-      await d.moveToText('Materials', 700);
+      await d.scrollTo(2700, 700);
       await d.until(6.5);
-      const addMat = await d.moveToEl('button:has-text("Add")', 650);
-      if (addMat) { await d.click(); await d.until(9.0);
-        const invField = await d.moveToEl('input[placeholder*="invoice" i], input[name*="invoice" i]', 500);
-        if (invField) { await d.click(); await d.type('M-90941'); }
-        await d.until(12.5);
-        const subtotalField = await d.moveToEl('input[type="number"]', 500);
-        if (subtotalField) { await d.click(); await d.type('31400'); } }
-      await d.until(15.29);
-      await d.press('Escape');
-      await d.until(22.22);
-      await d.moveToText('Labor', 700);
+      await d.moveToText('Materials', 700);
+      await d.until(12.0);
+      const mat = await d.moveToText('Sun Valley Lumber & Supply', 700);
+      if (!mat) await d.moveToText('M-90941', 700);
+      await d.until(20.0);
+      await d.moveToText('$34,383.00', 700);
+      if (!(await d.moveToText('$34,383.00', 1))) await d.moveToText('34,383', 700);
       await d.until(28.92);
-      await d.scrollTo(2200, 700);
+      await d.scrollTo(3000, 700);
       await d.until(36.7);
     },
   },
@@ -837,19 +826,27 @@ const CLIPS = {
     async run(page, d) {
       await d.until(1.5);
       await d.moveToEl('h2', 600);
-      await d.until(3.99);
-      await d.moveToEl('table tbody tr:nth-child(1)', 700);
-      await d.until(11.00);
-      await d.moveToEl('table tbody tr:nth-child(2)', 650);
-      await d.until(21.37);
-      await d.moveToEl('table tbody tr:last-child', 650);
-      await d.until(24.5);
-      await d.moveToEl('tbody tr:last-child button[aria-haspopup="menu"]', 600);
-      await d.until(27.5);
+      await d.until(3.46);
+      const r1 = await d.moveToText('E-2044', 700);
+      if (r1) await d.click();
+      await d.until(8.0);
       await d.press('Escape');
-      await d.until(29.15);
+      await d.until(10.04);
+      const r2 = await d.moveToText('E-2041', 650);
+      if (r2) await d.click();
+      await d.until(15.0);
+      await d.press('Escape');
+      await d.until(17.12);
+      const r3 = await d.moveToText('E-2038', 650);
+      if (r3) await d.click();
+      await d.until(22.5);
+      const menuBtn = await d.moveToEl('tbody tr:has-text("E-2038") button[aria-haspopup="menu"]', 600);
+      if (menuBtn) await d.click();
+      await d.until(25.5);
+      await d.press('Escape');
+      await d.until(27.29);
       await d.moveToEl('button:has-text("New Estimate")', 600);
-      await d.until(36.7);
+      await d.until(35.5);
     },
   },
   ch25: {
@@ -857,24 +854,24 @@ const CLIPS = {
     async run(page, d) {
       await d.until(1.5);
       await d.moveToEl('h2', 600);
-      await d.until(5.73);
-      await d.moveToText('Crane and rigging — Culver podium beam set', 700);
-      await d.until(10.5);
-      await d.moveToText('Recipients', 500);
-      await d.until(12.0);
+      await d.until(5.58);
+      const r1 = await d.moveToText('Rough plumbing relocation — master bath', 700);
+      if (r1) await d.click();
+      await d.until(9.0);
+      await d.press('Escape');
+      await d.until(10.99);
+      const r2 = await d.moveToText('Podium deck shoring — Level 1', 700);
+      if (r2) await d.click();
+      await d.until(13.5);
+      await d.press('Escape');
+      await d.until(15.19);
       await d.moveToText('Opened', 450);
-      await d.until(13.2);
+      await d.until(17.0);
       await d.moveToText('Responded', 450);
-      await d.until(14.35);
-      const vrow = await d.moveToText('Vendors', 500);
-      if (vrow) await d.click();
-      await d.until(25.41);
+      await d.until(26.28);
       const sendBtn = await d.moveToEl('button:has-text("Send Estimate Request")', 650);
-      if (sendBtn) { await d.click(); await d.until(28.0); await d.press('Escape'); }
-      await d.until(29.74);
-      const vendBtn = await d.moveToEl('button:has-text("Vendor")', 500);
-      if (vendBtn) await d.click();
-      await d.until(36.5);
+      if (sendBtn) { await d.click(); await d.until(29.0); await d.press('Escape'); }
+      await d.until(31.5);
     },
   },
   ch26: {
@@ -882,24 +879,28 @@ const CLIPS = {
     async run(page, d) {
       await d.until(1.5);
       await d.moveToEl('h2', 600);
-      await d.until(6.36);
-      await d.moveToEl('table tbody tr:first-child', 700);
-      await d.until(11.5);
-      await d.moveToText('Winner', 500);
-      await d.until(16.70);
-      await d.moveToEl('tbody tr:nth-child(1) input[type="checkbox"]', 550);
-      await d.click();
-      await d.until(18.5);
-      await d.moveToEl('tbody tr:nth-child(2) input[type="checkbox"]', 450);
-      await d.click();
-      await d.until(20.0);
-      await d.moveToEl('button:has-text("Compare Selected")', 600);
-      await d.until(21.5);
-      await d.click();
-      await d.until(22.34);
+      await d.until(4.03);
+      const rSummit = await d.moveToText('Summit Plumbing', 700);
+      if (rSummit) await d.click();
+      await d.until(7.0);
       await d.press('Escape');
-      await d.moveToEl('button:has-text("Add Estimate")', 600);
-      await d.until(31.1);
+      const rAnchor = await d.moveToText('Anchor Bay', 550);
+      await d.until(9.0);
+      const rCrest = await d.moveToText('Crest Valley', 550);
+      await d.until(13.47);
+      const cb1 = await d.moveToEl('tbody tr:has-text("Summit Plumbing") input[type="checkbox"]', 550);
+      if (cb1) await d.click();
+      await d.until(15.5);
+      const cb2 = await d.moveToEl('tbody tr:has-text("Anchor Bay") input[type="checkbox"]', 450);
+      if (cb2) await d.click();
+      await d.until(17.5);
+      const cmpBtn = await d.moveToEl('button:has-text("Compare Selected")', 600);
+      if (cmpBtn) { await d.click(); await d.until(21.0); await d.press('Escape'); }
+      await d.until(22.69);
+      const winRow = await d.moveToText('Summit Plumbing', 700);
+      if (winRow) { }
+      await d.moveToText('Winner', 500);
+      await d.until(30.5);
     },
   },
   ch27: {
