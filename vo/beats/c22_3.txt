@@ -1,0 +1,1 @@
+Material invoices get logged against the project that used them, so the lumber for the Camarillo job lands on the Camarillo job rather than in one big pile at month end.

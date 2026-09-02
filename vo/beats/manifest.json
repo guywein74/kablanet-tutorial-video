@@ -1,0 +1,790 @@
+{
+ "dashboard": [
+  [
+   "d1",
+   "This is your dashboard \u2014 the first screen you see when you sign in."
+  ],
+  [
+   "d2",
+   "The tiles along the top are your money at a glance."
+  ],
+  [
+   "d3",
+   "Total Projects Value is everything you have on the books. Received Amount is what has actually landed."
+  ],
+  [
+   "d4",
+   "Outstanding Balance is what is still owed to you, and Scheduled Balance is what is lined up but not due yet."
+  ],
+  [
+   "d5",
+   "Below the tiles are your open projects and your task list."
+  ],
+  [
+   "d6",
+   "Click any project to open it and see the whole job in one page."
+  ]
+ ],
+ "invoices": [
+  [
+   "i1",
+   "This is Invoices \u2014 every invoice you have raised, across every project and every customer, in one list."
+  ],
+  [
+   "i2",
+   "Use the filters along the top to narrow it down by project or by status, so you can see just what is still unpaid."
+  ],
+  [
+   "i3",
+   "Each row shows the number, the project, the amount, and where it has got to."
+  ],
+  [
+   "i4",
+   "To bill something new, click New Invoice, pick the project, and add the lines you are charging for."
+  ],
+  [
+   "i5",
+   "Once it is saved it feeds straight into your dashboard and your receivables."
+  ]
+ ],
+ "ch02": [
+  [
+   "c2_1",
+   "Everything lives on the left."
+  ],
+  [
+   "c2_2",
+   "Dashboard, Customers, Projects, then the money screens \u2014"
+  ],
+  [
+   "c2_3",
+   "Invoices, Accounts Receivable, Payments on one side, Jobs, Contractors, Suppliers and Accounts Payable on the other."
+  ],
+  [
+   "c2_4",
+   "Open Projects and your live jobs are listed right there, grouped under the customer they belong to, so you can jump into a job from anywhere without going back to a list."
+  ],
+  [
+   "c2_5",
+   "Estimates and Time Tracking each open into their own group."
+  ],
+  [
+   "c2_6",
+   "Help is at the bottom. That is the whole app."
+  ]
+ ],
+ "ch03": [
+  [
+   "c3_2",
+   "Start here \u2014 your company details print on every invoice you send, so it is worth ten minutes getting them right before you bill anyone."
+  ],
+  [
+   "c3_3",
+   "Name, street address, city, state and ZIP."
+  ],
+  [
+   "c3_4",
+   "Your phone numbers."
+  ],
+  [
+   "c3_5",
+   "Your tax ID and your license number, with the date it expires \u2014 that one matters, because it prints on the document."
+  ],
+  [
+   "c3_6",
+   "Drop your logo in at the top and it appears on everything automatically."
+  ],
+  [
+   "c3_7",
+   "Hit Save Settings and you are done."
+  ],
+  [
+   "c3_8",
+   "You will not come back to this screen often, but everything you send out reads better because you filled it in."
+  ]
+ ],
+ "ch04": [
+  [
+   "c4_1",
+   "On the User Settings tab you save your signature."
+  ],
+  [
+   "c4_2",
+   "Draw it with a finger or a mouse, or upload a photo of it, and Kablanet keeps it."
+  ],
+  [
+   "c4_3",
+   "From then on, signing a document takes one click instead of print, sign, scan."
+  ],
+  [
+   "c4_4",
+   "Save your initials in the box beside it \u2014 some documents ask you to initial every page."
+  ],
+  [
+   "c4_5",
+   "Below that is your email signature, which gets added to the messages the app sends for you."
+  ],
+  [
+   "c4_6",
+   "And this is also where you change your password, so do both while you are here."
+  ]
+ ],
+ "ch05": [
+  [
+   "c5_1",
+   "Your price list is your standard scopes and your rates, written down once."
+  ],
+  [
+   "c5_2",
+   "Add a line item \u2014 the wording you would put on an invoice \u2014 and the price you normally charge."
+  ],
+  [
+   "c5_3",
+   "Do the ones you quote every week first; you do not need a full catalogue to start."
+  ],
+  [
+   "c5_4",
+   "You can keep a second list for a builder who has negotiated rates, and copy prices between them."
+  ],
+  [
+   "c5_5",
+   "Group the items that always go together into an assembly, and you can pull a whole framing package into an invoice in one click."
+  ],
+  [
+   "c5_6",
+   "Or import your existing list from a spreadsheet."
+  ]
+ ],
+ "ch06": [
+  [
+   "c6_1",
+   "This is your dashboard. The top row is your customer money."
+  ],
+  [
+   "c6_2",
+   "Total Projects Value is everything on your books."
+  ],
+  [
+   "c6_3",
+   "Outstanding Balance is what is still owed to you."
+  ],
+  [
+   "c6_4",
+   "Scheduled Balance is the part of that already sitting on a payment schedule \u2014 the gap between the two is work you have billed but not scheduled yet."
+  ],
+  [
+   "c6_5",
+   "Received Amount is what has landed."
+  ],
+  [
+   "c6_6",
+   "The second row is the other direction: what you have committed to your subs and suppliers, and how much of it you still owe."
+  ],
+  [
+   "c6_7",
+   "Below that, Financial Health, your task list, and every open project with its balance."
+  ]
+ ],
+ "ch07": [
+  [
+   "c7_1",
+   "Projects is one row per job you are running."
+  ],
+  [
+   "c7_2",
+   "Project name, address, how many jobs you have handed out on it, the total, what has been paid and what is still owed."
+  ],
+  [
+   "c7_3",
+   "The footer adds it up."
+  ],
+  [
+   "c7_4",
+   "Flip Show Inactive and your finished jobs come back into the list."
+  ],
+  [
+   "c7_5",
+   "Your live projects also sit down the left menu, so you can jump straight into one from anywhere."
+  ],
+  [
+   "c7_6",
+   "Almost everything else in Kablanet hangs off a project, so this is usually where you start."
+  ]
+ ],
+ "ch08": [
+  [
+   "c8_1",
+   "Open a project and the whole job is on one page."
+  ],
+  [
+   "c8_2",
+   "Across the top, what it is worth and where the money stands."
+  ],
+  [
+   "c8_3",
+   "Then Project Details."
+  ],
+  [
+   "c8_4",
+   "Invoices holds everything you have billed on this job with the payment schedule underneath it."
+  ],
+  [
+   "c8_5",
+   "Labor, Materials and AP is the money going out \u2014 the jobs you handed to your subs, your material invoices, your crew's hours, and anything miscellaneous."
+  ],
+  [
+   "c8_6",
+   "Estimates is what you quoted."
+  ],
+  [
+   "c8_7",
+   "And at the bottom, your subs, your suppliers, your site photos and every document attached to the job."
+  ],
+  [
+   "c8_8",
+   "One page, both directions."
+  ]
+ ],
+ "ch09": [
+  [
+   "c9_1",
+   "You bill from the project, not from a blank page."
+  ],
+  [
+   "c9_2",
+   "Add Invoice \u2014 give it a name, Podium framing, Levels one to three."
+  ],
+  [
+   "c9_3",
+   "Leave the number blank and Kablanet assigns the next one."
+  ],
+  [
+   "c9_4",
+   "Now the pricing: instead of typing scopes out, pull an assembly straight off your price list and the whole package drops in, priced."
+  ],
+  [
+   "c9_5",
+   "Adjust a quantity where you need to."
+  ],
+  [
+   "c9_6",
+   "Under that, the payment schedule \u2014 the phases you will actually bill, and when."
+  ],
+  [
+   "c9_7",
+   "Tick Require Signature and saving opens the signing editor."
+  ],
+  [
+   "c9_8",
+   "The lines add up to what the invoice is worth."
+  ]
+ ],
+ "ch10": [
+  [
+   "c10_1",
+   "Saving opens the signing editor."
+  ],
+  [
+   "c10_2",
+   "This is the document your customer will actually see, built from your template with your logo and your license number on it."
+  ],
+  [
+   "c10_3",
+   "Down the side, Signees \u2014 the people who have to sign, in order."
+  ],
+  [
+   "c10_4",
+   "Add one: their name and their email. That is all they need; they do not create an account."
+  ],
+  [
+   "c10_5",
+   "Require signature and require initials are already on."
+  ],
+  [
+   "c10_6",
+   "Kablanet places the signature and initial boxes on the document for you, so you are not dragging fields around."
+  ]
+ ],
+ "ch11": [
+  [
+   "c11_1",
+   "Save and Send to Customer."
+  ],
+  [
+   "c11_2",
+   "Kablanet emails your customer a private link and the invoice moves to awaiting their signature."
+  ],
+  [
+   "c11_3",
+   "It opens in their browser \u2014 no login, nothing to install, and it works on a phone, which is usually where this actually happens."
+  ],
+  [
+   "c11_4",
+   "They read it, tap the signature box you placed, sign with a finger, and submit."
+  ],
+  [
+   "c11_5",
+   "Back in your list, the status changes on its own."
+  ],
+  [
+   "c11_6",
+   "You do not have to call anyone to find out whether they got it."
+  ]
+ ],
+ "ch12": [
+  [
+   "c12_1",
+   "Your turn. Counter-sign, using the signature you saved in Settings, and Kablanet flattens both signatures into one final PDF and files it against the job."
+  ],
+  [
+   "c12_2",
+   "Status reads Fully Executed."
+  ],
+  [
+   "c12_3",
+   "Now the part worth knowing."
+  ],
+  [
+   "c12_4",
+   "Until an invoice you marked Require Signature is signed by both sides, it sits in your list with a badge telling you it is excluded from your totals."
+  ],
+  [
+   "c12_5",
+   "The moment you counter-sign, its value lands on your dashboard and its unpaid amount lands in your receivables."
+  ],
+  [
+   "c12_6",
+   "If you sign outside the system, untick Require Signature and it counts straight away."
+  ]
+ ],
+ "ch13": [
+  [
+   "c13_1",
+   "When the deposit lands, record it once."
+  ],
+  [
+   "c13_2",
+   "On the project's payment schedule, find the phase, enter the amount, the date, how it came in and the check number, and mark it Received."
+  ],
+  [
+   "c13_3",
+   "That is the only place you type it. Everything else recalculates."
+  ],
+  [
+   "c13_4",
+   "The project balance drops. The dashboard's Received Amount goes up and Outstanding goes down by the same figure."
+  ],
+  [
+   "c13_5",
+   "And over in Accounts Receivable the row leaves the aging list, because it is no longer money you are chasing."
+  ],
+  [
+   "c13_6",
+   "Nothing is entered twice and nothing needs reconciling at the end of the month."
+  ]
+ ],
+ "ch14": [
+  [
+   "c14_1",
+   "You are not setting that podium beam yourself."
+  ],
+  [
+   "c14_2",
+   "On the same project, add a job: who is doing it, what the scope is, and what you agreed to pay them."
+  ],
+  [
+   "c14_3",
+   "Twenty-three nine for crane and rigging."
+  ],
+  [
+   "c14_4",
+   "Save it, and from that second it is a commitment \u2014 it shows as money you owe, not money you have spent."
+  ],
+  [
+   "c14_5",
+   "It appears against your contractor on the Contractors screen, in your Jobs list, and in Accounts Payable with its due date, without you entering it anywhere else."
+  ]
+ ],
+ "ch15": [
+  [
+   "c15_1",
+   "Same page, one section down: materials."
+  ],
+  [
+   "c15_2",
+   "Log the lumberyard invoice against this job \u2014 supplier, invoice number, date, due date and the total with tax."
+  ],
+  [
+   "c15_3",
+   "Now that cost sits on the job that used it, instead of in a general pile at the end of the month."
+  ],
+  [
+   "c15_4",
+   "Under that is Labor: the hours your crew clocked on this site, priced at their rate."
+  ],
+  [
+   "c15_5",
+   "Your subs, your materials and your own labor, all on the project that generated them."
+  ]
+ ],
+ "ch16": [
+  [
+   "c16_1",
+   "Here is the whole point, on a job that has been running four months."
+  ],
+  [
+   "c16_2",
+   "Project Value: three hundred ninety-seven thousand, seven fifty \u2014 everything you have billed on it."
+  ],
+  [
+   "c16_3",
+   "Cash Position splits that in two: two seventy-three has come in, a hundred twenty-four is still owed, and the bar shows you the split without doing arithmetic."
+  ],
+  [
+   "c16_4",
+   "Overall Margin is Project Value minus everything the job has cost you \u2014 your subs, your materials, your miscellaneous costs and your own crew's hours. Sixty-four thousand, six hundred."
+  ],
+  [
+   "c16_5",
+   "Cash Profit to Date is the same thing on a cash basis: money in, minus money actually out, right now."
+  ],
+  [
+   "c16_6",
+   "You did not build a spreadsheet. It has been true the whole time."
+  ]
+ ],
+ "ch17": [
+  [
+   "c17_1",
+   "Invoices is everything you have billed, across every project and every customer, in one list."
+  ],
+  [
+   "c17_2",
+   "Filter it down by project, by status, by signature status, or by when it was raised \u2014 so you can see just the ones still unsigned, or just this month's."
+  ],
+  [
+   "c17_3",
+   "Each row carries the project, the amount, where it has got to, and whether it has been signed."
+  ],
+  [
+   "c17_4",
+   "To bill something new, New Invoice, pick the project, and you land in the same editor you have already seen."
+  ]
+ ],
+ "ch18": [
+  [
+   "c18_1",
+   "Accounts Receivable is your chase list."
+  ],
+  [
+   "c18_2",
+   "The top row groups everything by where it has got to \u2014 Outstanding, Requested, Received."
+  ],
+  [
+   "c18_3",
+   "Below that is the aging: everything unpaid, sorted by how long it has been sitting."
+  ],
+  [
+   "c18_4",
+   "Zero to thirty, thirty-one to sixty, sixty-one to ninety, ninety-one to one-twenty, and over one-twenty."
+  ],
+  [
+   "c18_5",
+   "Twenty-one thousand of that is more than four months old, which is a phone call, not an email."
+  ],
+  [
+   "c18_6",
+   "You can request a payment straight from a row, open the documents behind it, or jump to the project."
+  ],
+  [
+   "c18_7",
+   "Mark it received here and every other screen catches up."
+  ]
+ ],
+ "ch19": [
+  [
+   "c19_1",
+   "Payments is the ledger of money actually moving, both directions."
+  ],
+  [
+   "c19_2",
+   "AP is what went out to your subs and suppliers."
+  ],
+  [
+   "c19_3",
+   "AR is what came in from your customers."
+  ],
+  [
+   "c19_4",
+   "Each row carries the project, the date, the amount, how it was paid and a check number if you have one."
+  ],
+  [
+   "c19_5",
+   "Filter by project, by contractor, by supplier, by status or by date, and download the lot as a CSV for your bookkeeper."
+  ],
+  [
+   "c19_6",
+   "Record a payment here or from inside the project \u2014 either way it lands in one place."
+  ]
+ ],
+ "ch20": [
+  [
+   "c20_1",
+   "Jobs is the work you have handed to your own subs, everywhere, in one list."
+  ],
+  [
+   "c20_2",
+   "Who is doing it, on which project, what you agreed to pay, what you have scheduled, what you have paid, and what is left."
+  ],
+  [
+   "c20_3",
+   "Add one by hand, or import their invoice and let Kablanet read the details straight off the document."
+  ],
+  [
+   "c20_4",
+   "For a framing outfit, cranes, trusses, shear and cleanup are most of your cost \u2014 the more of them you record, the truer every profit number in the app becomes."
+  ]
+ ],
+ "ch21": [
+  [
+   "c21_1",
+   "Contractors is your own subs \u2014 the people you hand work to."
+  ],
+  [
+   "c21_2",
+   "Each one shows their trades, how many projects and jobs they are on, and the money: total, scheduled, paid, and what is still open."
+  ],
+  [
+   "c21_3",
+   "Click a name and a panel slides in with their whole history, so you can see everything you have ever given them without hunting through projects."
+  ],
+  [
+   "c21_4",
+   "Keeping their license number and expiry here also means the paperwork you generate for them comes out right the first time."
+  ]
+ ],
+ "ch22": [
+  [
+   "c22_1",
+   "Suppliers is where the yards and the truss plants live."
+  ],
+  [
+   "c22_2",
+   "Open one and a panel slides in with their invoices, what you have paid, and what is still outstanding."
+  ],
+  [
+   "c22_3",
+   "Material invoices get logged against the project that used them, so the lumber for the Camarillo job lands on the Camarillo job rather than in one big pile at month end."
+  ],
+  [
+   "c22_4",
+   "That is what makes the cost side honest, and it is the difference between knowing a job made money and hoping it did."
+  ]
+ ],
+ "ch23": [
+  [
+   "c23_1",
+   "Accounts Payable is the mirror image."
+  ],
+  [
+   "c23_2",
+   "What you owe, grouped by where each payment has got to \u2014 Outstanding, meaning nobody has asked yet; Requested, waiting on you to approve; Scheduled; Issued; and Completed."
+  ],
+  [
+   "c23_3",
+   "Under that, the same aging you saw on the receivables side, so you always know what is due this week."
+  ],
+  [
+   "c23_4",
+   "Fifteen four to Ironwood is past a hundred and twenty days, which is how you lose a good truss crew."
+  ],
+  [
+   "c23_5",
+   "Because it draws from the same jobs and material invoices as everything else, approving something here shows up on the project and the dashboard immediately."
+  ]
+ ],
+ "ch24": [
+  [
+   "c24_1",
+   "Sent Estimates is work you have quoted."
+  ],
+  [
+   "c24_2",
+   "Each one shows the customer, the project, the amount, and where it stands."
+  ],
+  [
+   "c24_3",
+   "An estimate is an offer, not money \u2014 it does not touch your totals until it is accepted, which is exactly what you want in a pipeline number."
+  ],
+  [
+   "c24_4",
+   "When a builder says yes, convert it into an invoice rather than retyping it; the lines come across with it."
+  ],
+  [
+   "c24_5",
+   "When you lose one, mark it lost, so what is left in the list is real work you might still get."
+  ]
+ ],
+ "ch25": [
+  [
+   "c25_1",
+   "Estimate Requests is how you send one scope out to several subs at once."
+  ],
+  [
+   "c25_2",
+   "Write it once \u2014 crane and rigging for the Culver podium \u2014 pick who you are sending it to, and Kablanet emails each of them."
+  ],
+  [
+   "c25_3",
+   "You can see who was sent what, who opened it, who answered and who has gone quiet, and chase the quiet ones from here."
+  ],
+  [
+   "c25_4",
+   "Their replies come back as Received Estimates."
+  ],
+  [
+   "c25_5",
+   "It turns pricing a job from a morning of phone calls into a few minutes at the keyboard."
+  ]
+ ],
+ "ch26": [
+  [
+   "c26_1",
+   "Received Estimates is the other direction \u2014 prices your subs and your suppliers have quoted you."
+  ],
+  [
+   "c26_2",
+   "Record what each came back with against the project and the scope, and you are comparing real numbers side by side instead of digging through email."
+  ],
+  [
+   "c26_3",
+   "Tick two or more and Compare Selected puts them next to each other."
+  ],
+  [
+   "c26_4",
+   "Mark the one you are going with as the winner, and it becomes a job \u2014 the amount you agreed carries straight over into what you owe them."
+  ]
+ ],
+ "ch27": [
+  [
+   "c27_1",
+   "Time Tracking is where your crew clock in and out against a job."
+  ],
+  [
+   "c27_2",
+   "It works on a phone, so it happens on the site instead of being reconstructed from memory on Friday afternoon."
+  ],
+  [
+   "c27_3",
+   "Pick the project \u2014 nearby ones come up first \u2014 and clock in."
+  ],
+  [
+   "c27_4",
+   "The hours land as labor cost on the job they were worked on, which is the piece most trade businesses are missing when they try to work out what a job really made."
+  ],
+  [
+   "c27_5",
+   "The Time Dashboard totals it all by person and by project."
+  ]
+ ],
+ "ch28": [
+  [
+   "c28_1",
+   "Emails is a record of everything Kablanet has sent and received on your behalf."
+  ],
+  [
+   "c28_2",
+   "If a builder says they never got the invoice, this is where you check \u2014 what went out, to whom, when, whether they opened it and whether they clicked the link."
+  ],
+  [
+   "c28_3",
+   "Filter by date or by type when you are looking for something specific."
+  ],
+  [
+   "c28_4",
+   "Received holds the replies to your estimate requests, with their attachments."
+  ],
+  [
+   "c28_5",
+   "It is not a mailbox and it is not trying to be one. It is the paper trail."
+  ]
+ ],
+ "ch29": [
+  [
+   "c29_1",
+   "There is more in Settings than you need on day one."
+  ],
+  [
+   "c29_2",
+   "Users is where you invite your office manager or your bookkeeper and choose what each of them can see."
+  ],
+  [
+   "c29_3",
+   "Document Statuses lets you rename the stages a payment or an invoice moves through to match the words you already use."
+  ],
+  [
+   "c29_4",
+   "Trades is the list you tag your subs with."
+  ],
+  [
+   "c29_5",
+   "Document Templates is the layout your invoices print in \u2014 your logo, your wording, your footer."
+  ],
+  [
+   "c29_6",
+   "Have a look when you have a quiet afternoon."
+  ]
+ ],
+ "ch30": [
+  [
+   "c30_1",
+   "Help is the full manual, at the bottom of the left menu."
+  ],
+  [
+   "c30_2",
+   "Search it for whatever screen you are stuck on and you get step-by-step instructions with pictures."
+  ],
+  [
+   "c30_3",
+   "If the answer is not there, send us a question from the same screen \u2014 it comes through with your account attached, so we can see what you were looking at instead of asking you to describe it."
+  ],
+  [
+   "c30_4",
+   "We would much rather hear from you early than find out weeks later that something has not been working."
+  ]
+ ],
+ "hl": [
+  [
+   "hl1",
+   "You know what the job was worth. The number on the contract. Ask what it left you, and you're waiting on the last supplier invoice \u2014 sometimes months after the crew rolled off. That gap isn't a bookkeeping problem. It's why you underbid the next one. Kablanet closes it."
+  ],
+  [
+   "hl2",
+   "Check Require Signature on any invoice or contract and the signing editor opens \u2014 place the signature box right on the page. Your customer taps the emailed link and signs in their browser. No account, no app. You counter-sign, both signatures flatten into one PDF, and the app logs who opened it, when, and from what IP."
+  ],
+  [
+   "hl3",
+   "Your crew clocks in from a phone. The app offers the projects closest to them, so hours land on the right job, not reconstructed Friday. Set each person's rate \u2014 regular, overtime, lunch deducted \u2014 and those hours become labor cost on that job. The map shows who's on the clock, and where the phone actually was."
+  ],
+  [
+   "hl4",
+   "Pricing a job means the same scope out to four subs. Write it once, pick who gets it, attach the plans, send. They reply through a link \u2014 no account needed \u2014 and the bids come back in one list you read side by side. Then you quote your customer off real numbers."
+  ],
+  [
+   "hl5",
+   "Two price lists. Yours is the scopes you sell, at the price you normally charge. The other builds itself: every invoice, quote and bid you save writes that vendor's price into their history. So you can see what your lumber yard charged you in March, and what they're charging now."
+  ],
+  [
+   "hl6",
+   "Open a customer and you get every call, text and meeting you logged, and the date you said you'd follow up. Open a sub: what you owe them, every bid they've sent, what they've charged you before."
+  ],
+  [
+   "hl7",
+   "All of it lands on the same project. Four numbers across the top: what the job is worth, what's come in, your margin, and cash profit to date. Nobody assembled that. It's the paperwork you already have to do, subtracted. Which means it's true today \u2014 while there's still a change order left to price."
+  ],
+  [
+   "hl8",
+   "It's only as true as what you put in \u2014 that part is real work. So don't migrate. Put one live job in Kablanet and compare that number to what you thought that job was making. Kablanet dot com."
+  ]
+ ]
+}

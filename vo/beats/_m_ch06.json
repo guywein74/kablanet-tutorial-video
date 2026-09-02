@@ -1,0 +1,9 @@
+[
+ ["c6_1", "This is your dashboard. The top row is your customer money."],
+ ["c6_2", "Total Projects Value is everything on your books."],
+ ["c6_3", "Outstanding Balance is what is still owed to you."],
+ ["c6_4", "Scheduled Balance is the part of that already sitting on a payment schedule — the gap between the two is work you have billed but not scheduled yet."],
+ ["c6_5", "Received Amount is what has landed."],
+ ["c6_6", "The second row is the other direction: what you have committed to your subs and suppliers, and how much of it you still owe."],
+ ["c6_7", "Below that, Financial Health, your task list, and every open project with its balance."]
+]

@@ -1,0 +1,1 @@
+Each one shows the customer, the project, the amount, and where it stands.

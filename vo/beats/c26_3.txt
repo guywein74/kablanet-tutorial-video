@@ -1,0 +1,1 @@
+Tick two or more and Compare Selected puts them next to each other.

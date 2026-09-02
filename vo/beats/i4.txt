@@ -1,0 +1,1 @@
+To bill something new, click New Invoice, pick the project, and add the lines you are charging for.

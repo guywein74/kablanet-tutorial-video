@@ -1,0 +1,1 @@
+Each one shows their trades, how many projects and jobs they are on, and the money: total, scheduled, paid, and what is still open.

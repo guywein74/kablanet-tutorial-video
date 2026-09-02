@@ -1,0 +1,1 @@
+Check Require Signature on any invoice or contract and the signing editor opens — place the signature box right on the page. Your customer taps the emailed link and signs in their browser. No account, no app. You counter-sign, both signatures flatten into one PDF, and the app logs who opened it, when, and from what IP.

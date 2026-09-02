@@ -1,0 +1,3 @@
+file 'shotA_n.mp4'
+file 'shotB_n.mp4'
+file 'card1.mp4'

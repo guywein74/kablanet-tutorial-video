@@ -1,0 +1,1 @@
+Because it draws from the same jobs and material invoices as everything else, approving something here shows up on the project and the dashboard immediately.

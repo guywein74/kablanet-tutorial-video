@@ -1,0 +1,1 @@
+To bill something new, New Invoice, pick the project, and you land in the same editor you have already seen.

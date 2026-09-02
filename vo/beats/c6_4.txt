@@ -1,0 +1,1 @@
+Scheduled Balance is the part of that already sitting on a payment schedule — the gap between the two is work you have billed but not scheduled yet.

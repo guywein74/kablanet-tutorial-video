@@ -1,0 +1,1 @@
+Two price lists. Yours is the scopes you sell, at the price you normally charge. The other builds itself: every invoice, quote and bid you save writes that vendor's price into their history. So you can see what your lumber yard charged you in March, and what they're charging now.

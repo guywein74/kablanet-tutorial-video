@@ -1,0 +1,13 @@
+node_modules/
+.DS_Store
+
+# captured login session — never commit credentials
+auth.json
+tok.txt
+rtok.txt
+
+# raw screen captures — superseded by final/*.mp4
+clips/*.webm
+
+# pre-speed-adjustment intermediate audio — superseded by the .wav/.m4a next to each
+*.raw.wav

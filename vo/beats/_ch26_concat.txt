@@ -1,0 +1,7 @@
+file '/Users/guyw/Desktop/Claude/Kablanet/tutorial/vo/beats/c26_1.wav'
+file '/Users/guyw/Desktop/Claude/Kablanet/tutorial/vo/beats/_gap.wav'
+file '/Users/guyw/Desktop/Claude/Kablanet/tutorial/vo/beats/c26_2.wav'
+file '/Users/guyw/Desktop/Claude/Kablanet/tutorial/vo/beats/_gap.wav'
+file '/Users/guyw/Desktop/Claude/Kablanet/tutorial/vo/beats/c26_3.wav'
+file '/Users/guyw/Desktop/Claude/Kablanet/tutorial/vo/beats/_gap.wav'
+file '/Users/guyw/Desktop/Claude/Kablanet/tutorial/vo/beats/c26_4.wav'

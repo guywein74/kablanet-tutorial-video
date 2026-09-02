@@ -1,0 +1,1248 @@
+{
+ "dashboard": {
+  "total": 35.83,
+  "cues": [
+   {
+    "beat": "d1",
+    "start": 0.0,
+    "end": 4.51,
+    "text": "This is your dashboard \u2014 the first screen you see when you sign in."
+   },
+   {
+    "beat": "d2",
+    "start": 4.86,
+    "end": 8.73,
+    "text": "The tiles along the top are your money at a glance."
+   },
+   {
+    "beat": "d3",
+    "start": 9.08,
+    "end": 17.05,
+    "text": "Total Projects Value is everything you have on the books. Received Amount is what has actually landed."
+   },
+   {
+    "beat": "d4",
+    "start": 17.4,
+    "end": 25.16,
+    "text": "Outstanding Balance is what is still owed to you, and Scheduled Balance is what is lined up but not due yet."
+   },
+   {
+    "beat": "d5",
+    "start": 25.51,
+    "end": 29.94,
+    "text": "Below the tiles are your open projects and your task list."
+   },
+   {
+    "beat": "d6",
+    "start": 30.29,
+    "end": 35.83,
+    "text": "Click any project to open it and see the whole job in one page."
+   }
+  ]
+ },
+ "invoices": {
+  "total": 38.67,
+  "cues": [
+   {
+    "beat": "i1",
+    "start": 0.0,
+    "end": 8.95,
+    "text": "This is Invoices \u2014 every invoice you have raised, across every project and every customer, in one list."
+   },
+   {
+    "beat": "i2",
+    "start": 9.3,
+    "end": 17.6,
+    "text": "Use the filters along the top to narrow it down by project or by status, so you can see just what is still unpaid."
+   },
+   {
+    "beat": "i3",
+    "start": 17.95,
+    "end": 24.73,
+    "text": "Each row shows the number, the project, the amount, and where it has got to."
+   },
+   {
+    "beat": "i4",
+    "start": 25.08,
+    "end": 32.64,
+    "text": "To bill something new, click New Invoice, pick the project, and add the lines you are charging for."
+   },
+   {
+    "beat": "i5",
+    "start": 32.99,
+    "end": 38.67,
+    "text": "Once it is saved it feeds straight into your dashboard and your receivables."
+   }
+  ]
+ },
+ "ch02": {
+  "total": 44.256,
+  "cues": [
+   {
+    "beat": "c2_1",
+    "start": 0.0,
+    "end": 2.633,
+    "text": "Everything lives on the left."
+   },
+   {
+    "beat": "c2_2",
+    "start": 2.983,
+    "end": 9.425,
+    "text": "Dashboard, Customers, Projects, then the money screens \u2014"
+   },
+   {
+    "beat": "c2_3",
+    "start": 9.775,
+    "end": 22.975,
+    "text": "Invoices, Accounts Receivable, Payments on one side, Jobs, Contractors, Suppliers and Accounts Payable on the other."
+   },
+   {
+    "beat": "c2_4",
+    "start": 23.325,
+    "end": 34.333,
+    "text": "Open Projects and your live jobs are listed right there, grouped under the customer they belong to, so you can jump into a job from anywhere without going back to a list."
+   },
+   {
+    "beat": "c2_5",
+    "start": 34.683,
+    "end": 39.457,
+    "text": "Estimates and Time Tracking each open into their own group."
+   },
+   {
+    "beat": "c2_6",
+    "start": 39.807,
+    "end": 44.256,
+    "text": "Help is at the bottom. That is the whole app."
+   }
+  ]
+ },
+ "ch03": {
+  "total": 43.693,
+  "cues": [
+   {
+    "beat": "c3_2",
+    "start": 0.0,
+    "end": 9.674,
+    "text": "Start here \u2014 your company details print on every invoice you send, so it is worth ten minutes getting them right before you bill anyone."
+   },
+   {
+    "beat": "c3_3",
+    "start": 10.024,
+    "end": 16.317,
+    "text": "Name, street address, city, state and ZIP."
+   },
+   {
+    "beat": "c3_4",
+    "start": 16.667,
+    "end": 18.238,
+    "text": "Your phone numbers."
+   },
+   {
+    "beat": "c3_5",
+    "start": 18.588,
+    "end": 27.045,
+    "text": "Your tax ID and your license number, with the date it expires \u2014 that one matters, because it prints on the document."
+   },
+   {
+    "beat": "c3_6",
+    "start": 27.395,
+    "end": 32.789,
+    "text": "Drop your logo in at the top and it appears on everything automatically."
+   },
+   {
+    "beat": "c3_7",
+    "start": 33.139,
+    "end": 36.139,
+    "text": "Hit Save Settings and you are done."
+   },
+   {
+    "beat": "c3_8",
+    "start": 36.489,
+    "end": 43.693,
+    "text": "You will not come back to this screen often, but everything you send out reads better because you filled it in."
+   }
+  ]
+ },
+ "ch04": {
+  "total": 35.021,
+  "cues": [
+   {
+    "beat": "c4_1",
+    "start": 0.0,
+    "end": 3.645,
+    "text": "On the User Settings tab you save your signature."
+   },
+   {
+    "beat": "c4_2",
+    "start": 3.995,
+    "end": 10.583,
+    "text": "Draw it with a finger or a mouse, or upload a photo of it, and Kablanet keeps it."
+   },
+   {
+    "beat": "c4_3",
+    "start": 10.933,
+    "end": 18.073,
+    "text": "From then on, signing a document takes one click instead of print, sign, scan."
+   },
+   {
+    "beat": "c4_4",
+    "start": 18.423,
+    "end": 24.114,
+    "text": "Save your initials in the box beside it \u2014 some documents ask you to initial every page."
+   },
+   {
+    "beat": "c4_5",
+    "start": 24.464,
+    "end": 30.003,
+    "text": "Below that is your email signature, which gets added to the messages the app sends for you."
+   },
+   {
+    "beat": "c4_6",
+    "start": 30.353,
+    "end": 35.021,
+    "text": "And this is also where you change your password, so do both while you are here."
+   }
+  ]
+ },
+ "ch05": {
+  "total": 38.229,
+  "cues": [
+   {
+    "beat": "c5_1",
+    "start": 0.0,
+    "end": 5.459,
+    "text": "Your price list is your standard scopes and your rates, written down once."
+   },
+   {
+    "beat": "c5_2",
+    "start": 5.809,
+    "end": 11.586,
+    "text": "Add a line item \u2014 the wording you would put on an invoice \u2014 and the price you normally charge."
+   },
+   {
+    "beat": "c5_3",
+    "start": 11.936,
+    "end": 17.891,
+    "text": "Do the ones you quote every week first; you do not need a full catalogue to start."
+   },
+   {
+    "beat": "c5_4",
+    "start": 18.241,
+    "end": 24.863,
+    "text": "You can keep a second list for a builder who has negotiated rates, and copy prices between them."
+   },
+   {
+    "beat": "c5_5",
+    "start": 25.213,
+    "end": 34.271,
+    "text": "Group the items that always go together into an assembly, and you can pull a whole framing package into an invoice in one click."
+   },
+   {
+    "beat": "c5_6",
+    "start": 34.621,
+    "end": 38.229,
+    "text": "Or import your existing list from a spreadsheet."
+   }
+  ]
+ },
+ "ch06": {
+  "total": 43.08,
+  "cues": [
+   {
+    "beat": "c6_1",
+    "start": 0.0,
+    "end": 4.844,
+    "text": "This is your dashboard. The top row is your customer money."
+   },
+   {
+    "beat": "c6_2",
+    "start": 5.194,
+    "end": 9.156,
+    "text": "Total Projects Value is everything on your books."
+   },
+   {
+    "beat": "c6_3",
+    "start": 9.506,
+    "end": 13.264,
+    "text": "Outstanding Balance is what is still owed to you."
+   },
+   {
+    "beat": "c6_4",
+    "start": 13.614,
+    "end": 23.702,
+    "text": "Scheduled Balance is the part of that already sitting on a payment schedule \u2014 the gap between the two is work you have billed but not scheduled yet."
+   },
+   {
+    "beat": "c6_5",
+    "start": 24.052,
+    "end": 27.337,
+    "text": "Received Amount is what has landed."
+   },
+   {
+    "beat": "c6_6",
+    "start": 27.687,
+    "end": 35.742,
+    "text": "The second row is the other direction: what you have committed to your subs and suppliers, and how much of it you still owe."
+   },
+   {
+    "beat": "c6_7",
+    "start": 36.092,
+    "end": 43.08,
+    "text": "Below that, Financial Health, your task list, and every open project with its balance."
+   }
+  ]
+ },
+ "ch07": {
+  "total": 38.075,
+  "cues": [
+   {
+    "beat": "c7_1",
+    "start": 0.0,
+    "end": 4.578,
+    "text": "Projects is one row per job you are running."
+   },
+   {
+    "beat": "c7_2",
+    "start": 4.928,
+    "end": 15.163,
+    "text": "Project name, address, how many jobs you have handed out on it, the total, what has been paid and what is still owed."
+   },
+   {
+    "beat": "c7_3",
+    "start": 15.513,
+    "end": 19.203,
+    "text": "The footer adds it up."
+   },
+   {
+    "beat": "c7_4",
+    "start": 19.553,
+    "end": 24.842,
+    "text": "Flip Show Inactive and your finished jobs come back into the list."
+   },
+   {
+    "beat": "c7_5",
+    "start": 25.192,
+    "end": 31.581,
+    "text": "Your live projects also sit down the left menu, so you can jump straight into one from anywhere."
+   },
+   {
+    "beat": "c7_6",
+    "start": 31.931,
+    "end": 38.075,
+    "text": "Almost everything else in Kablanet hangs off a project, so this is usually where you start."
+   }
+  ]
+ },
+ "ch08": {
+  "total": 47.728,
+  "cues": [
+   {
+    "beat": "c8_1",
+    "start": 0.0,
+    "end": 4.548,
+    "text": "Open a project and the whole job is on one page."
+   },
+   {
+    "beat": "c8_2",
+    "start": 4.898,
+    "end": 10.224,
+    "text": "Across the top, what it is worth and where the money stands."
+   },
+   {
+    "beat": "c8_3",
+    "start": 10.574,
+    "end": 13.088,
+    "text": "Then Project Details."
+   },
+   {
+    "beat": "c8_4",
+    "start": 13.438,
+    "end": 19.625,
+    "text": "Invoices holds everything you have billed on this job with the payment schedule underneath it."
+   },
+   {
+    "beat": "c8_5",
+    "start": 19.975,
+    "end": 32.794,
+    "text": "Labor, Materials and AP is the money going out \u2014 the jobs you handed to your subs, your material invoices, your crew's hours, and anything miscellaneous."
+   },
+   {
+    "beat": "c8_6",
+    "start": 33.144,
+    "end": 35.907,
+    "text": "Estimates is what you quoted."
+   },
+   {
+    "beat": "c8_7",
+    "start": 36.257,
+    "end": 44.34,
+    "text": "And at the bottom, your subs, your suppliers, your site photos and every document attached to the job."
+   },
+   {
+    "beat": "c8_8",
+    "start": 44.69,
+    "end": 47.728,
+    "text": "One page, both directions."
+   }
+  ]
+ },
+ "ch09": {
+  "total": 43.806,
+  "cues": [
+   {
+    "beat": "c9_1",
+    "start": 0.0,
+    "end": 4.079,
+    "text": "You bill from the project, not from a blank page."
+   },
+   {
+    "beat": "c9_2",
+    "start": 4.429,
+    "end": 10.578,
+    "text": "Add Invoice \u2014 give it a name, Podium framing, Levels one to three."
+   },
+   {
+    "beat": "c9_3",
+    "start": 10.928,
+    "end": 15.079,
+    "text": "Leave the number blank and Kablanet assigns the next one."
+   },
+   {
+    "beat": "c9_4",
+    "start": 15.429,
+    "end": 25.513,
+    "text": "Now the pricing: instead of typing scopes out, pull an assembly straight off your price list and the whole package drops in, priced."
+   },
+   {
+    "beat": "c9_5",
+    "start": 25.863,
+    "end": 28.171,
+    "text": "Adjust a quantity where you need to."
+   },
+   {
+    "beat": "c9_6",
+    "start": 28.521,
+    "end": 34.307,
+    "text": "Under that, the payment schedule \u2014 the phases you will actually bill, and when."
+   },
+   {
+    "beat": "c9_7",
+    "start": 34.657,
+    "end": 40.056,
+    "text": "Tick Require Signature and saving opens the signing editor."
+   },
+   {
+    "beat": "c9_8",
+    "start": 40.407,
+    "end": 43.806,
+    "text": "The lines add up to what the invoice is worth."
+   }
+  ]
+ },
+ "ch10": {
+  "total": 40.6,
+  "cues": [
+   {
+    "beat": "c10_1",
+    "start": 0.0,
+    "end": 2.882,
+    "text": "Saving opens the signing editor."
+   },
+   {
+    "beat": "c10_2",
+    "start": 3.232,
+    "end": 11.976,
+    "text": "This is the document your customer will actually see, built from your template with your logo and your license number on it."
+   },
+   {
+    "beat": "c10_3",
+    "start": 12.326,
+    "end": 17.822,
+    "text": "Down the side, Signees \u2014 the people who have to sign, in order."
+   },
+   {
+    "beat": "c10_4",
+    "start": 18.172,
+    "end": 27.117,
+    "text": "Add one: their name and their email. That is all they need; they do not create an account."
+   },
+   {
+    "beat": "c10_5",
+    "start": 27.467,
+    "end": 32.677,
+    "text": "Require signature and require initials are already on."
+   },
+   {
+    "beat": "c10_6",
+    "start": 33.027,
+    "end": 40.6,
+    "text": "Kablanet places the signature and initial boxes on the document for you, so you are not dragging fields around."
+   }
+  ]
+ },
+ "ch11": {
+  "total": 33.953,
+  "cues": [
+   {
+    "beat": "c11_1",
+    "start": 0.0,
+    "end": 2.636,
+    "text": "Save and Send to Customer."
+   },
+   {
+    "beat": "c11_2",
+    "start": 2.986,
+    "end": 9.586,
+    "text": "Kablanet emails your customer a private link and the invoice moves to awaiting their signature."
+   },
+   {
+    "beat": "c11_3",
+    "start": 9.936,
+    "end": 19.043,
+    "text": "It opens in their browser \u2014 no login, nothing to install, and it works on a phone, which is usually where this actually happens."
+   },
+   {
+    "beat": "c11_4",
+    "start": 19.393,
+    "end": 25.334,
+    "text": "They read it, tap the signature box you placed, sign with a finger, and submit."
+   },
+   {
+    "beat": "c11_5",
+    "start": 25.684,
+    "end": 29.32,
+    "text": "Back in your list, the status changes on its own."
+   },
+   {
+    "beat": "c11_6",
+    "start": 29.67,
+    "end": 33.953,
+    "text": "You do not have to call anyone to find out whether they got it."
+   }
+  ]
+ },
+ "ch12": {
+  "total": 42.72,
+  "cues": [
+   {
+    "beat": "c12_1",
+    "start": 0.0,
+    "end": 11.436,
+    "text": "Your turn. Counter-sign, using the signature you saved in Settings, and Kablanet flattens both signatures into one final PDF and files it against the job."
+   },
+   {
+    "beat": "c12_2",
+    "start": 11.786,
+    "end": 14.882,
+    "text": "Status reads Fully Executed."
+   },
+   {
+    "beat": "c12_3",
+    "start": 15.232,
+    "end": 17.597,
+    "text": "Now the part worth knowing."
+   },
+   {
+    "beat": "c12_4",
+    "start": 17.947,
+    "end": 28.436,
+    "text": "Until an invoice you marked Require Signature is signed by both sides, it sits in your list with a badge telling you it is excluded from your totals."
+   },
+   {
+    "beat": "c12_5",
+    "start": 28.786,
+    "end": 36.145,
+    "text": "The moment you counter-sign, its value lands on your dashboard and its unpaid amount lands in your receivables."
+   },
+   {
+    "beat": "c12_6",
+    "start": 36.495,
+    "end": 42.72,
+    "text": "If you sign outside the system, untick Require Signature and it counts straight away."
+   }
+  ]
+ },
+ "ch13": {
+  "total": 44.215,
+  "cues": [
+   {
+    "beat": "c13_1",
+    "start": 0.0,
+    "end": 3.402,
+    "text": "When the deposit lands, record it once."
+   },
+   {
+    "beat": "c13_2",
+    "start": 3.752,
+    "end": 15.749,
+    "text": "On the project's payment schedule, find the phase, enter the amount, the date, how it came in and the check number, and mark it Received."
+   },
+   {
+    "beat": "c13_3",
+    "start": 16.099,
+    "end": 20.864,
+    "text": "That is the only place you type it. Everything else recalculates."
+   },
+   {
+    "beat": "c13_4",
+    "start": 21.214,
+    "end": 30.165,
+    "text": "The project balance drops. The dashboard's Received Amount goes up and Outstanding goes down by the same figure."
+   },
+   {
+    "beat": "c13_5",
+    "start": 30.515,
+    "end": 38.22,
+    "text": "And over in Accounts Receivable the row leaves the aging list, because it is no longer money you are chasing."
+   },
+   {
+    "beat": "c13_6",
+    "start": 38.57,
+    "end": 44.215,
+    "text": "Nothing is entered twice and nothing needs reconciling at the end of the month."
+   }
+  ]
+ },
+ "ch14": {
+  "total": 33.425,
+  "cues": [
+   {
+    "beat": "c14_1",
+    "start": 0.0,
+    "end": 3.646,
+    "text": "You are not setting that podium beam yourself."
+   },
+   {
+    "beat": "c14_2",
+    "start": 3.996,
+    "end": 11.314,
+    "text": "On the same project, add a job: who is doing it, what the scope is, and what you agreed to pay them."
+   },
+   {
+    "beat": "c14_3",
+    "start": 11.664,
+    "end": 14.576,
+    "text": "Twenty-three nine for crane and rigging."
+   },
+   {
+    "beat": "c14_4",
+    "start": 14.926,
+    "end": 22.675,
+    "text": "Save it, and from that second it is a commitment \u2014 it shows as money you owe, not money you have spent."
+   },
+   {
+    "beat": "c14_5",
+    "start": 23.025,
+    "end": 33.425,
+    "text": "It appears against your contractor on the Contractors screen, in your Jobs list, and in Accounts Payable with its due date, without you entering it anywhere else."
+   }
+  ]
+ },
+ "ch15": {
+  "total": 36.172,
+  "cues": [
+   {
+    "beat": "c15_1",
+    "start": 0.0,
+    "end": 4.392,
+    "text": "Same page, one section down: materials."
+   },
+   {
+    "beat": "c15_2",
+    "start": 4.742,
+    "end": 14.935,
+    "text": "Log the lumberyard invoice against this job \u2014 supplier, invoice number, date, due date and the total with tax."
+   },
+   {
+    "beat": "c15_3",
+    "start": 15.285,
+    "end": 21.873,
+    "text": "Now that cost sits on the job that used it, instead of in a general pile at the end of the month."
+   },
+   {
+    "beat": "c15_4",
+    "start": 22.223,
+    "end": 28.568,
+    "text": "Under that is Labor: the hours your crew clocked on this site, priced at their rate."
+   },
+   {
+    "beat": "c15_5",
+    "start": 28.918,
+    "end": 36.171,
+    "text": "Your subs, your materials and your own labor, all on the project that generated them."
+   }
+  ]
+ },
+ "ch16": {
+  "total": 54.815,
+  "cues": [
+   {
+    "beat": "c16_1",
+    "start": 0.0,
+    "end": 5.129,
+    "text": "Here is the whole point, on a job that has been running four months."
+   },
+   {
+    "beat": "c16_2",
+    "start": 5.479,
+    "end": 12.896,
+    "text": "Project Value: three hundred ninety-seven thousand, seven fifty \u2014 everything you have billed on it."
+   },
+   {
+    "beat": "c16_3",
+    "start": 13.246,
+    "end": 25.912,
+    "text": "Cash Position splits that in two: two seventy-three has come in, a hundred twenty-four is still owed, and the bar shows you the split without doing arithmetic."
+   },
+   {
+    "beat": "c16_4",
+    "start": 26.262,
+    "end": 40.016,
+    "text": "Overall Margin is Project Value minus everything the job has cost you \u2014 your subs, your materials, your miscellaneous costs and your own crew's hours. Sixty-four thousand, six hundred."
+   },
+   {
+    "beat": "c16_5",
+    "start": 40.366,
+    "end": 48.863,
+    "text": "Cash Profit to Date is the same thing on a cash basis: money in, minus money actually out, right now."
+   },
+   {
+    "beat": "c16_6",
+    "start": 49.213,
+    "end": 54.815,
+    "text": "You did not build a spreadsheet. It has been true the whole time."
+   }
+  ]
+ },
+ "ch17": {
+  "total": 37.616,
+  "cues": [
+   {
+    "beat": "c17_1",
+    "start": 0.0,
+    "end": 7.943,
+    "text": "Invoices is everything you have billed, across every project and every customer, in one list."
+   },
+   {
+    "beat": "c17_2",
+    "start": 8.293,
+    "end": 19.511,
+    "text": "Filter it down by project, by status, by signature status, or by when it was raised \u2014 so you can see just the ones still unsigned, or just this month's."
+   },
+   {
+    "beat": "c17_3",
+    "start": 19.861,
+    "end": 27.582,
+    "text": "Each row carries the project, the amount, where it has got to, and whether it has been signed."
+   },
+   {
+    "beat": "c17_4",
+    "start": 27.932,
+    "end": 37.616,
+    "text": "To bill something new, New Invoice, pick the project, and you land in the same editor you have already seen."
+   }
+  ]
+ },
+ "ch18": {
+  "total": 48.388,
+  "cues": [
+   {
+    "beat": "c18_1",
+    "start": 0.0,
+    "end": 3.326,
+    "text": "Accounts Receivable is your chase list."
+   },
+   {
+    "beat": "c18_2",
+    "start": 3.676,
+    "end": 11.615,
+    "text": "The top row groups everything by where it has got to \u2014 Outstanding, Requested, Received."
+   },
+   {
+    "beat": "c18_3",
+    "start": 11.965,
+    "end": 18.632,
+    "text": "Below that is the aging: everything unpaid, sorted by how long it has been sitting."
+   },
+   {
+    "beat": "c18_4",
+    "start": 18.982,
+    "end": 28.379,
+    "text": "Zero to thirty, thirty-one to sixty, sixty-one to ninety, ninety-one to one-twenty, and over one-twenty."
+   },
+   {
+    "beat": "c18_5",
+    "start": 28.729,
+    "end": 35.825,
+    "text": "Twenty-one thousand of that is more than four months old, which is a phone call, not an email."
+   },
+   {
+    "beat": "c18_6",
+    "start": 36.175,
+    "end": 43.097,
+    "text": "You can request a payment straight from a row, open the documents behind it, or jump to the project."
+   },
+   {
+    "beat": "c18_7",
+    "start": 43.447,
+    "end": 48.388,
+    "text": "Mark it received here and every other screen catches up."
+   }
+  ]
+ },
+ "ch19": {
+  "total": 41.768,
+  "cues": [
+   {
+    "beat": "c19_1",
+    "start": 0.0,
+    "end": 4.992,
+    "text": "Payments is the ledger of money actually moving, both directions."
+   },
+   {
+    "beat": "c19_2",
+    "start": 5.342,
+    "end": 9.345,
+    "text": "AP is what went out to your subs and suppliers."
+   },
+   {
+    "beat": "c19_3",
+    "start": 9.695,
+    "end": 12.934,
+    "text": "AR is what came in from your customers."
+   },
+   {
+    "beat": "c19_4",
+    "start": 13.284,
+    "end": 22.28,
+    "text": "Each row carries the project, the date, the amount, how it was paid and a check number if you have one."
+   },
+   {
+    "beat": "c19_5",
+    "start": 22.63,
+    "end": 33.692,
+    "text": "Filter by project, by contractor, by supplier, by status or by date, and download the lot as a CSV for your bookkeeper."
+   },
+   {
+    "beat": "c19_6",
+    "start": 34.042,
+    "end": 41.768,
+    "text": "Record a payment here or from inside the project \u2014 either way it lands in one place."
+   }
+  ]
+ },
+ "ch20": {
+  "total": 38.386,
+  "cues": [
+   {
+    "beat": "c20_1",
+    "start": 0.0,
+    "end": 6.475,
+    "text": "Jobs is the work you have handed to your own subs, everywhere, in one list."
+   },
+   {
+    "beat": "c20_2",
+    "start": 6.825,
+    "end": 17.16,
+    "text": "Who is doing it, on which project, what you agreed to pay, what you have scheduled, what you have paid, and what is left."
+   },
+   {
+    "beat": "c20_3",
+    "start": 17.51,
+    "end": 24.818,
+    "text": "Add one by hand, or import their invoice and let Kablanet read the details straight off the document."
+   },
+   {
+    "beat": "c20_4",
+    "start": 25.168,
+    "end": 38.386,
+    "text": "For a framing outfit, cranes, trusses, shear and cleanup are most of your cost \u2014 the more of them you record, the truer every profit number in the app becomes."
+   }
+  ]
+ },
+ "ch21": {
+  "total": 33.65,
+  "cues": [
+   {
+    "beat": "c21_1",
+    "start": 0.0,
+    "end": 4.548,
+    "text": "Contractors is your own subs \u2014 the people you hand work to."
+   },
+   {
+    "beat": "c21_2",
+    "start": 4.898,
+    "end": 15.82,
+    "text": "Each one shows their trades, how many projects and jobs they are on, and the money: total, scheduled, paid, and what is still open."
+   },
+   {
+    "beat": "c21_3",
+    "start": 16.17,
+    "end": 25.642,
+    "text": "Click a name and a panel slides in with their whole history, so you can see everything you have ever given them without hunting through projects."
+   },
+   {
+    "beat": "c21_4",
+    "start": 25.992,
+    "end": 33.65,
+    "text": "Keeping their license number and expiry here also means the paperwork you generate for them comes out right the first time."
+   }
+  ]
+ },
+ "ch22": {
+  "total": 31.686,
+  "cues": [
+   {
+    "beat": "c22_1",
+    "start": 0.0,
+    "end": 3.759,
+    "text": "Suppliers is where the yards and the truss plants live."
+   },
+   {
+    "beat": "c22_2",
+    "start": 4.109,
+    "end": 11.292,
+    "text": "Open one and a panel slides in with their invoices, what you have paid, and what is still outstanding."
+   },
+   {
+    "beat": "c22_3",
+    "start": 11.642,
+    "end": 22.854,
+    "text": "Material invoices get logged against the project that used them, so the lumber for the Camarillo job lands on the Camarillo job rather than in one big pile at month end."
+   },
+   {
+    "beat": "c22_4",
+    "start": 23.204,
+    "end": 31.686,
+    "text": "That is what makes the cost side honest, and it is the difference between knowing a job made money and hoping it did."
+   }
+  ]
+ },
+ "ch23": {
+  "total": 45.572,
+  "cues": [
+   {
+    "beat": "c23_1",
+    "start": 0.0,
+    "end": 3.132,
+    "text": "Accounts Payable is the mirror image."
+   },
+   {
+    "beat": "c23_2",
+    "start": 3.482,
+    "end": 20.176,
+    "text": "What you owe, grouped by where each payment has got to \u2014 Outstanding, meaning nobody has asked yet; Requested, waiting on you to approve; Scheduled; Issued; and Completed."
+   },
+   {
+    "beat": "c23_3",
+    "start": 20.526,
+    "end": 27.142,
+    "text": "Under that, the same aging you saw on the receivables side, so you always know what is due this week."
+   },
+   {
+    "beat": "c23_4",
+    "start": 27.492,
+    "end": 34.697,
+    "text": "Fifteen four to Ironwood is past a hundred and twenty days, which is how you lose a good truss crew."
+   },
+   {
+    "beat": "c23_5",
+    "start": 35.047,
+    "end": 45.572,
+    "text": "Because it draws from the same jobs and material invoices as everything else, approving something here shows up on the project and the dashboard immediately."
+   }
+  ]
+ },
+ "ch24": {
+  "total": 36.254,
+  "cues": [
+   {
+    "beat": "c24_1",
+    "start": 0.0,
+    "end": 3.639,
+    "text": "Sent Estimates is work you have quoted."
+   },
+   {
+    "beat": "c24_2",
+    "start": 3.989,
+    "end": 10.648,
+    "text": "Each one shows the customer, the project, the amount, and where it stands."
+   },
+   {
+    "beat": "c24_3",
+    "start": 10.998,
+    "end": 21.019,
+    "text": "An estimate is an offer, not money \u2014 it does not touch your totals until it is accepted, which is exactly what you want in a pipeline number."
+   },
+   {
+    "beat": "c24_4",
+    "start": 21.369,
+    "end": 28.798,
+    "text": "When a builder says yes, convert it into an invoice rather than retyping it; the lines come across with it."
+   },
+   {
+    "beat": "c24_5",
+    "start": 29.148,
+    "end": 36.254,
+    "text": "When you lose one, mark it lost, so what is left in the list is real work you might still get."
+   }
+  ]
+ },
+ "ch25": {
+  "total": 36.055,
+  "cues": [
+   {
+    "beat": "c25_1",
+    "start": 0.0,
+    "end": 5.382,
+    "text": "Estimate Requests is how you send one scope out to several subs at once."
+   },
+   {
+    "beat": "c25_2",
+    "start": 5.732,
+    "end": 14.0,
+    "text": "Write it once \u2014 crane and rigging for the Culver podium \u2014 pick who you are sending it to, and Kablanet emails each of them."
+   },
+   {
+    "beat": "c25_3",
+    "start": 14.35,
+    "end": 25.056,
+    "text": "You can see who was sent what, who opened it, who answered and who has gone quiet, and chase the quiet ones from here."
+   },
+   {
+    "beat": "c25_4",
+    "start": 25.406,
+    "end": 29.388,
+    "text": "Their replies come back as Received Estimates."
+   },
+   {
+    "beat": "c25_5",
+    "start": 29.738,
+    "end": 36.055,
+    "text": "It turns pricing a job from a morning of phone calls into a few minutes at the keyboard."
+   }
+  ]
+ },
+ "ch26": {
+  "total": 30.853,
+  "cues": [
+   {
+    "beat": "c26_1",
+    "start": 0.0,
+    "end": 6.008,
+    "text": "Received Estimates is the other direction \u2014 prices your subs and your suppliers have quoted you."
+   },
+   {
+    "beat": "c26_2",
+    "start": 6.358,
+    "end": 16.348,
+    "text": "Record what each came back with against the project and the scope, and you are comparing real numbers side by side instead of digging through email."
+   },
+   {
+    "beat": "c26_3",
+    "start": 16.698,
+    "end": 21.989,
+    "text": "Tick two or more and Compare Selected puts them next to each other."
+   },
+   {
+    "beat": "c26_4",
+    "start": 22.339,
+    "end": 30.853,
+    "text": "Mark the one you are going with as the winner, and it becomes a job \u2014 the amount you agreed carries straight over into what you owe them."
+   }
+  ]
+ },
+ "ch27": {
+  "total": 33.703,
+  "cues": [
+   {
+    "beat": "c27_1",
+    "start": 0.0,
+    "end": 4.928,
+    "text": "Time Tracking is where your crew clock in and out against a job."
+   },
+   {
+    "beat": "c27_2",
+    "start": 5.278,
+    "end": 12.823,
+    "text": "It works on a phone, so it happens on the site instead of being reconstructed from memory on Friday afternoon."
+   },
+   {
+    "beat": "c27_3",
+    "start": 13.173,
+    "end": 18.194,
+    "text": "Pick the project \u2014 nearby ones come up first \u2014 and clock in."
+   },
+   {
+    "beat": "c27_4",
+    "start": 18.544,
+    "end": 28.223,
+    "text": "The hours land as labor cost on the job they were worked on, which is the piece most trade businesses are missing when they try to work out what a job really made."
+   },
+   {
+    "beat": "c27_5",
+    "start": 28.573,
+    "end": 33.703,
+    "text": "The Time Dashboard totals it all by person and by project."
+   }
+  ]
+ },
+ "ch28": {
+  "total": 35.351,
+  "cues": [
+   {
+    "beat": "c28_1",
+    "start": 0.0,
+    "end": 5.752,
+    "text": "Emails is a record of everything Kablanet has sent and received on your behalf."
+   },
+   {
+    "beat": "c28_2",
+    "start": 6.102,
+    "end": 17.647,
+    "text": "If a builder says they never got the invoice, this is where you check \u2014 what went out, to whom, when, whether they opened it and whether they clicked the link."
+   },
+   {
+    "beat": "c28_3",
+    "start": 17.997,
+    "end": 23.032,
+    "text": "Filter by date or by type when you are looking for something specific."
+   },
+   {
+    "beat": "c28_4",
+    "start": 23.382,
+    "end": 28.516,
+    "text": "Received holds the replies to your estimate requests, with their attachments."
+   },
+   {
+    "beat": "c28_5",
+    "start": 28.866,
+    "end": 35.351,
+    "text": "It is not a mailbox and it is not trying to be one. It is the paper trail."
+   }
+  ]
+ },
+ "ch29": {
+  "total": 34.249,
+  "cues": [
+   {
+    "beat": "c29_1",
+    "start": 0.0,
+    "end": 4.159,
+    "text": "There is more in Settings than you need on day one."
+   },
+   {
+    "beat": "c29_2",
+    "start": 4.509,
+    "end": 11.035,
+    "text": "Users is where you invite your office manager or your bookkeeper and choose what each of them can see."
+   },
+   {
+    "beat": "c29_3",
+    "start": 11.385,
+    "end": 19.58,
+    "text": "Document Statuses lets you rename the stages a payment or an invoice moves through to match the words you already use."
+   },
+   {
+    "beat": "c29_4",
+    "start": 19.93,
+    "end": 23.584,
+    "text": "Trades is the list you tag your subs with."
+   },
+   {
+    "beat": "c29_5",
+    "start": 23.934,
+    "end": 31.241,
+    "text": "Document Templates is the layout your invoices print in \u2014 your logo, your wording, your footer."
+   },
+   {
+    "beat": "c29_6",
+    "start": 31.591,
+    "end": 34.249,
+    "text": "Have a look when you have a quiet afternoon."
+   }
+  ]
+ },
+ "ch30": {
+  "total": 29.298,
+  "cues": [
+   {
+    "beat": "c30_1",
+    "start": 0.0,
+    "end": 4.598,
+    "text": "Help is the full manual, at the bottom of the left menu."
+   },
+   {
+    "beat": "c30_2",
+    "start": 4.948,
+    "end": 11.692,
+    "text": "Search it for whatever screen you are stuck on and you get step-by-step instructions with pictures."
+   },
+   {
+    "beat": "c30_3",
+    "start": 12.042,
+    "end": 22.203,
+    "text": "If the answer is not there, send us a question from the same screen \u2014 it comes through with your account attached, so we can see what you were looking at instead of asking you to describe it."
+   },
+   {
+    "beat": "c30_4",
+    "start": 22.553,
+    "end": 29.298,
+    "text": "We would much rather hear from you early than find out weeks later that something has not been working."
+   }
+  ]
+ },
+ "hl": {
+  "total": 160.727,
+  "cues": [
+   {
+    "beat": "hl1",
+    "start": 0.0,
+    "end": 20.115,
+    "text": "You know what the job was worth. The number on the contract. Ask what it left you, and you're waiting on the last supplier invoice \u2014 sometimes months after the crew rolled off. That gap isn't a bookkeeping problem. It's why you underbid the next one. Kablanet closes it."
+   },
+   {
+    "beat": "hl2",
+    "start": 20.465,
+    "end": 44.015,
+    "text": "Check Require Signature on any invoice or contract and the signing editor opens \u2014 place the signature box right on the page. Your customer taps the emailed link and signs in their browser. No account, no app. You counter-sign, both signatures flatten into one PDF, and the app logs who opened it, when, and from what IP."
+   },
+   {
+    "beat": "hl3",
+    "start": 44.365,
+    "end": 67.13,
+    "text": "Your crew clocks in from a phone. The app offers the projects closest to them, so hours land on the right job, not reconstructed Friday. Set each person's rate \u2014 regular, overtime, lunch deducted \u2014 and those hours become labor cost on that job. The map shows who's on the clock, and where the phone actually was."
+   },
+   {
+    "beat": "hl4",
+    "start": 67.48,
+    "end": 87.479,
+    "text": "Pricing a job means the same scope out to four subs. Write it once, pick who gets it, attach the plans, send. They reply through a link \u2014 no account needed \u2014 and the bids come back in one list you read side by side. Then you quote your customer off real numbers."
+   },
+   {
+    "beat": "hl5",
+    "start": 87.829,
+    "end": 107.999,
+    "text": "Two price lists. Yours is the scopes you sell, at the price you normally charge. The other builds itself: every invoice, quote and bid you save writes that vendor's price into their history. So you can see what your lumber yard charged you in March, and what they're charging now."
+   },
+   {
+    "beat": "hl6",
+    "start": 108.349,
+    "end": 122.146,
+    "text": "Open a customer and you get every call, text and meeting you logged, and the date you said you'd follow up. Open a sub: what you owe them, every bid they've sent, what they've charged you before."
+   },
+   {
+    "beat": "hl7",
+    "start": 122.496,
+    "end": 145.529,
+    "text": "All of it lands on the same project. Four numbers across the top: what the job is worth, what's come in, your margin, and cash profit to date. Nobody assembled that. It's the paperwork you already have to do, subtracted. Which means it's true today \u2014 while there's still a change order left to price."
+   },
+   {
+    "beat": "hl8",
+    "start": 145.879,
+    "end": 160.727,
+    "text": "It's only as true as what you put in \u2014 that part is real work. So don't migrate. Put one live job in Kablanet and compare that number to what you thought that job was making. Kablanet dot com."
+   }
+  ]
+ }
+}

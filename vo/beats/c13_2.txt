@@ -1,0 +1,1 @@
+On the project's payment schedule, find the phase, enter the amount, the date, how it came in and the check number, and mark it Received.

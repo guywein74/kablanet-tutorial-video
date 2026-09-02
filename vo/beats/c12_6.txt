@@ -1,0 +1,1 @@
+If you sign outside the system, untick Require Signature and it counts straight away.

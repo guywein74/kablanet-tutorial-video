@@ -1,0 +1,1 @@
+Click a name and a panel slides in with their whole history, so you can see everything you have ever given them without hunting through projects.

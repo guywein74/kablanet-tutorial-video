@@ -1,0 +1,1 @@
+The project balance drops. The dashboard's Received Amount goes up and Outstanding goes down by the same figure.

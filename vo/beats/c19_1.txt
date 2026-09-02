@@ -1,0 +1,1 @@
+Payments is the ledger of money actually moving, both directions.

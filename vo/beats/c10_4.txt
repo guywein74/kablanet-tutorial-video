@@ -1,0 +1,1 @@
+Add one: their name and their email. That is all they need; they do not create an account.

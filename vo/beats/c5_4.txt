@@ -1,0 +1,1 @@
+You can keep a second list for a builder who has negotiated rates, and copy prices between them.

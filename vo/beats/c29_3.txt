@@ -1,0 +1,1 @@
+Document Statuses lets you rename the stages a payment or an invoice moves through to match the words you already use.

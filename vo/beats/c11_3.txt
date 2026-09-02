@@ -1,0 +1,1 @@
+It opens in their browser — no login, nothing to install, and it works on a phone, which is usually where this actually happens.

@@ -1,0 +1,8 @@
+[
+ ["c13_1", "When the deposit lands, record it once."],
+ ["c13_2", "On the project's payment schedule, find the phase, enter the amount, the date, how it came in and the check number, and mark it Received."],
+ ["c13_3", "That is the only place you type it. Everything else recalculates."],
+ ["c13_4", "The project balance drops. The dashboard's Received Amount goes up and Outstanding goes down by the same figure."],
+ ["c13_5", "And over in Accounts Receivable the row leaves the aging list, because it is no longer money you are chasing."],
+ ["c13_6", "Nothing is entered twice and nothing needs reconciling at the end of the month."]
+]

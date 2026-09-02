@@ -1,0 +1,1 @@
+Each row carries the project, the date, the amount, how it was paid and a check number if you have one.

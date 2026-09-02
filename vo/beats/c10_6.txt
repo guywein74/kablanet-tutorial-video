@@ -1,0 +1,1 @@
+Kablanet places the signature and initial boxes on the document for you, so you are not dragging fields around.

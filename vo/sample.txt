@@ -1,0 +1,1 @@
+This is your dashboard — the first thing you see when you sign in. The tiles across the top tell you what you've invoiced, what's already landed in the bank, and what's still outstanding. Click any project below to open it.

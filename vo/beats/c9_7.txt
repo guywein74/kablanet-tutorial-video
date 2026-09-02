@@ -1,0 +1,1 @@
+Tick Require Signature and saving opens the signing editor.

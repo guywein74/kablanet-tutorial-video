@@ -1,0 +1,1 @@
+If a builder says they never got the invoice, this is where you check — what went out, to whom, when, whether they opened it and whether they clicked the link.

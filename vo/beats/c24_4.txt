@@ -1,0 +1,1 @@
+When a builder says yes, convert it into an invoice rather than retyping it; the lines come across with it.

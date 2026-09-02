@@ -1,0 +1,1 @@
+Invoices holds everything you have billed on this job with the payment schedule underneath it.

@@ -1,0 +1,180 @@
+{
+ "pages": [
+  {
+   "id": "setup-company",
+   "title": "Your company details",
+   "route": "/settings",
+   "group": "Setting up",
+   "blurb": "The details that print on everything you send.",
+   "script": "Start in Settings. Your company details \u2014 name, address, phone, license number and your logo \u2014 print on every document you send, so it is worth ten minutes getting them right before you invoice anyone. Upload your logo here and it appears on your invoices and estimates automatically. While you are in Settings you can also invite your office manager or your bookkeeper, and choose what each of them is allowed to see. Everything here can be changed later."
+  },
+  {
+   "id": "setup-signature",
+   "title": "Your signature",
+   "route": "/settings?tab=user",
+   "group": "Setting up",
+   "blurb": "Draw it once, use it on every document.",
+   "script": "On the User Settings tab you save your signature. Draw it with your finger or a mouse, or upload a picture of it, and Kablanet keeps it for you. From then on, signing a document takes one click instead of printing, signing and scanning. You can set an email signature here too, which gets added to the messages the app sends on your behalf. This is also the tab where you change your password, so do both while you are here."
+  },
+  {
+   "id": "setup-price-list",
+   "title": "Setting up your price list",
+   "route": "/price-list",
+   "group": "Setting up",
+   "blurb": "An hour here saves a day a year.",
+   "script": "The price list is your standard scopes and rates. Add a scope \u2014 the description you would write on an invoice \u2014 and the price you normally charge. Do the ones you quote every week first; you do not need a complete catalogue to start. Group the items that always go together into a set, and you can pull the whole package into an invoice in one click. You can also import an existing list from a spreadsheet rather than typing it all in."
+  },
+  {
+   "id": "dashboard",
+   "title": "Dashboard",
+   "route": "/dashboard",
+   "group": "Every day",
+   "blurb": "Your money at a glance, the moment you sign in.",
+   "script": "This is your dashboard \u2014 the first screen you see when you sign in. The tiles along the top are your money at a glance. Total Projects Value is everything you have on the books. Received Amount is what has actually landed. Outstanding Balance is what is still owed to you, and Scheduled Balance is what is lined up but not due yet. Below the tiles are your open projects and your task list. Click any project to open it and see the whole job in one page."
+  },
+  {
+   "id": "projects",
+   "title": "Projects",
+   "route": "/projects",
+   "group": "Every day",
+   "blurb": "One row per job, and the front door to everything else.",
+   "script": "Projects is one row per job you are running. You will see the customer, what the job is worth, and how much of it you have billed so far. Your active projects also sit down the left menu, so you can jump straight to one from anywhere in the app without coming back here. Use the search and filters at the top when the list gets long. Almost everything else in Kablanet hangs off a project, so this is usually where you start."
+  },
+  {
+   "id": "project-detail",
+   "title": "Inside a project",
+   "route": "/projects",
+   "group": "Every day",
+   "blurb": "The whole job on one page \u2014 billing on one side, costs on the other.",
+   "script": "Open a project and you get the whole job in one page. At the top, what it is worth and what has been paid. Then your invoices and the payment schedule behind them. Below that is the money going out \u2014 the jobs you have given your own subcontractors, your material invoices, and your crew's hours. Further down are photos and documents for the job. This is the one screen that answers what did this job actually leave me, rather than just what was it worth."
+  },
+  {
+   "id": "invoices",
+   "title": "Invoices",
+   "route": "/invoices",
+   "group": "Getting paid",
+   "blurb": "Everything you've billed, and where you raise the next one.",
+   "script": "This is Invoices \u2014 every invoice you have raised, across every project and every customer, in one list. Use the filters along the top to narrow it down by project or by status, so you can see just what is still unpaid. Each row shows the number, the project, the amount, and where it has got to. To bill something new, click New Invoice, pick the project, and add the lines you are charging for. Once it is saved it feeds straight into your dashboard and your receivables."
+  },
+  {
+   "id": "accounts-receivable",
+   "title": "Accounts Receivable",
+   "route": "/accounts-receivable",
+   "group": "Getting paid",
+   "blurb": "The chase list, oldest debts first.",
+   "script": "Accounts Receivable is your chase list. Everything you have billed and not been paid for, whoever the customer is, grouped by how long it has been sitting \u2014 zero to thirty days, thirty-one to sixty, sixty-one to ninety, and older. Anything past sixty days is worth a phone call. You can request a payment straight from a row, open the documents behind it, or jump to the project it came from. When money arrives, mark it received here and every other screen catches up."
+  },
+  {
+   "id": "payments",
+   "title": "Payments",
+   "route": "/payments",
+   "group": "Getting paid",
+   "blurb": "Every payment in and out, in one ledger.",
+   "script": "Payments is the ledger of money actually moving \u2014 what has come in from your customers and what has gone out to your subs and suppliers. Each row carries the project, the amount, the date, the method, and a check number if you have one. A payment moves from scheduled to received as it lands. You can record one here, or from the payment schedule inside the project. Either way it updates your dashboard and your aging at the same time, so nothing is entered twice."
+  },
+  {
+   "id": "customers",
+   "title": "Customers",
+   "route": "/customers",
+   "group": "Who you work with",
+   "blurb": "Everyone you bill, and what they owe.",
+   "script": "Customers is everyone you bill \u2014 builders, developers, homeowners, whoever writes the check. Open one and you see their projects, everything you have invoiced them, and what is still outstanding, so you can answer where do I stand with this customer in a couple of seconds. Add a new customer with the Add Customer button, and their contact details flow onto the documents you send them. If most of your work comes through one or two builders, this list will stay short, and that is fine."
+  },
+  {
+   "id": "contractors",
+   "title": "Contractors",
+   "route": "/contractors",
+   "group": "Who you work with",
+   "blurb": "Your own subs, and what you owe each of them.",
+   "script": "Contractors is your own subcontractors \u2014 the people you hand work to. Each one shows their trades, how many projects and jobs they are on, and the money: total, scheduled, paid and balance. Click a name and a panel slides in with their full history, so you can see everything you have ever given them without hunting through projects. Keeping their license and contact details here also means the paperwork you generate for them comes out right the first time."
+  },
+  {
+   "id": "suppliers",
+   "title": "Suppliers",
+   "route": "/suppliers",
+   "group": "Who you work with",
+   "blurb": "The merchants you buy from, and the invoices they send you.",
+   "script": "Suppliers is where the merchants you buy materials from live. Same shape as Contractors \u2014 open one and a panel slides in with their invoices, what you have paid, and what is still outstanding. Material invoices get logged against the project that used them, so the cost lands on the right job rather than in a general pile. That is what makes the cost side of a project honest, and it is the difference between knowing a job was profitable and hoping it was."
+  },
+  {
+   "id": "jobs",
+   "title": "Jobs",
+   "route": "/jobs",
+   "group": "What it costs you",
+   "blurb": "Work you've given out, and what you agreed to pay for it.",
+   "script": "Jobs is the work you have handed to your own subcontractors. Each job records who is doing it, on which project, what you agreed to pay, and what you have paid so far. You can add one by hand, or import it from a bid or an invoice they have sent you and let Kablanet read the details off the document. Jobs are the biggest part of most trade businesses' costs, so the more of them you record, the truer every profit number in the app becomes."
+  },
+  {
+   "id": "accounts-payable",
+   "title": "Accounts Payable",
+   "route": "/accounts-payable",
+   "group": "What it costs you",
+   "blurb": "What you owe, and what's waiting on you to approve it.",
+   "script": "Accounts Payable is the mirror image of your receivables \u2014 what you owe, and when. It is grouped by where each payment has got to: not yet requested, waiting for you to approve and schedule, and anything with credits or refunds outstanding. Work down it and you always know what is due this week. Because it draws from the same jobs and material invoices as everything else, approving a payment here shows up on the project and the dashboard immediately."
+  },
+  {
+   "id": "price-list",
+   "title": "Price List",
+   "route": "/price-list",
+   "group": "What it costs you",
+   "blurb": "Your standard scopes and rates, written once.",
+   "script": "The price list is your standard scopes, line items and assemblies, saved with their prices. Write the wording for a scope once, and drop it into an estimate or an invoice instead of typing it out again. Group the ones that always go together into a set, and you can pull in a whole package in one click. It is the least urgent screen in the app and the one that saves the most time over a year, so it is worth an hour when you have a quiet afternoon."
+  },
+  {
+   "id": "estimates-sent",
+   "title": "Sent Estimates",
+   "route": "/estimates/sent",
+   "group": "Winning work",
+   "blurb": "What you've quoted and haven't won yet.",
+   "script": "Sent Estimates is work you have quoted but not won yet. Each one shows the customer, the project, the amount, and whether it is still open. When a customer says yes, convert the estimate straight into an invoice rather than retyping the numbers \u2014 the lines come across with it. When you lose one, mark it lost, so the total sitting in your pipeline is a number you can trust rather than a graveyard of old quotes."
+  },
+  {
+   "id": "estimates-received",
+   "title": "Received Estimates",
+   "route": "/bids",
+   "group": "Winning work",
+   "blurb": "Prices your subs and suppliers have quoted you.",
+   "script": "Received Estimates is the other direction \u2014 prices your own subcontractors and suppliers have quoted to you. Record what each one has come back with against the project and the scope, so when you are pricing a job you are comparing real numbers side by side rather than digging through email. When you decide who is doing the work, an estimate here becomes a job, and the amount you agreed carries over into what you owe them."
+  },
+  {
+   "id": "estimate-requests",
+   "title": "Estimate Requests",
+   "route": "/estimates/requests",
+   "group": "Winning work",
+   "blurb": "Send one scope to several subs at once.",
+   "script": "Estimate Requests is how you send a scope of work out to several subcontractors or suppliers at the same time. Write it once, pick who you are sending it to, and Kablanet emails each of them. You can see who has been sent what and chase the ones who have gone quiet, and their replies come back into Received Estimates. It turns pricing a job from a morning of phone calls into a few minutes at the keyboard."
+  },
+  {
+   "id": "time-tracking",
+   "title": "Time Tracking",
+   "route": "/time-tracking",
+   "group": "Everything else",
+   "blurb": "Clock your crew in and out against a job.",
+   "script": "Time Tracking is where your crew clock in and out against a project. It works on a phone, so it can happen on site rather than being reconstructed from memory on a Friday afternoon. Hours land as labor cost on the job they were worked on, which is the piece most trade businesses are missing when they try to work out what a job really made. The Time Dashboard alongside it totals the hours by person and by project."
+  },
+  {
+   "id": "emails",
+   "title": "Emails",
+   "route": "/emails",
+   "group": "Everything else",
+   "blurb": "Proof of what went out, and when.",
+   "script": "Emails is a record of everything Kablanet has sent and received on your behalf, split into sent and received. If a customer says they never got an invoice, this is where you check \u2014 you can see exactly what went out and when. Filter by date when you are looking for something specific. It is not a mailbox and it is not meant to replace one; it is the paper trail behind the documents the app sends for you."
+  },
+  {
+   "id": "settings",
+   "title": "Settings",
+   "route": "/settings",
+   "group": "Everything else",
+   "blurb": "Your password, your company, your team.",
+   "script": "Settings is where you set the app up to be yours. The first tab is you \u2014 your name, your details, and your password, which you should change the first time you sign in. Company settings hold your address, license number and logo, and those print on the documents you send. You can invite your office manager or bookkeeper and choose what each of them can see. There is more in here than you need on day one, so do not feel you have to work through all of it."
+  },
+  {
+   "id": "help",
+   "title": "Help",
+   "route": "/help",
+   "group": "Everything else",
+   "blurb": "The manual, and a direct line to us.",
+   "script": "Help is the full manual, at the bottom of the left menu. Search it for the screen you are stuck on and you will get step by step instructions with pictures. If the answer is not there, send us a question from the same screen \u2014 it comes through with your account attached, so we can see what you were looking at instead of asking you to describe it. We would much rather hear from you early than find out weeks later that something has not been working."
+  }
+ ]
+}

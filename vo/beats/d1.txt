@@ -1,0 +1,1 @@
+This is your dashboard — the first screen you see when you sign in.

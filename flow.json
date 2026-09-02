@@ -1,0 +1,166 @@
+{
+ "title": "One invoice, start to finish",
+ "intro": "The tour above covers each screen on its own. This is the same app doing one whole job \u2014 billing a customer, getting it signed, getting paid, and paying the people who did the work. Follow the right-hand column and you'll see why nothing in Kablanet has to be entered twice.",
+ "steps": [
+  {
+   "id": "flow-1",
+   "title": "Raise the invoice",
+   "blurb": "On the project, not in a vacuum.",
+   "script": "Open the project and click New Invoice. Give it a title, then add what you are charging for \u2014 pull the wording and the prices straight from your price list instead of typing them out. The lines you add are the invoice's payment schedule, and their total is what the invoice is worth. Save it without a signature and it counts immediately. Here we are going to tick Require Signature, and that changes things.",
+   "moves": [
+    [
+     "Project",
+     "Invoice appears on the project with its payment schedule underneath."
+    ],
+    [
+     "Invoices",
+     "New row, with its number, the project, the amount and its status."
+    ],
+    [
+     "Accounts Receivable",
+     "Nothing yet \u2014 see the next step."
+    ],
+    [
+     "Dashboard",
+     "No change yet either."
+    ]
+   ]
+  },
+  {
+   "id": "flow-2",
+   "title": "Send it for signature",
+   "blurb": "The signing editor, and who has to sign.",
+   "script": "Ticking Require Signature opens the signing editor as soon as you save. Add the customer as a signee with their name and email, then drop a signature field where they need to sign \u2014 you place it on the document itself, so it lands in the right spot on the page. Click Send for Signature and Kablanet emails them a private link. You do not have to print anything, and they do not need an account.",
+   "moves": [
+    [
+     "Invoices",
+     "Signature status changes to awaiting the customer."
+    ],
+    [
+     "Emails",
+     "The invitation is logged, so you can prove it went out and when."
+    ],
+    [
+     "Accounts Receivable",
+     "Still nothing. Until it is signed, the invoice is held out of your totals."
+    ]
+   ]
+  },
+  {
+   "id": "flow-3",
+   "title": "The customer signs",
+   "blurb": "What they see, on whatever device they have.",
+   "script": "Your customer clicks the link in the email and the document opens in their browser \u2014 no login, no app to install. They read it, sign in the box you placed, and submit. It works on a phone, which is usually where it actually happens. The moment they sign, their signature is written into the document and you get it back. You will see the status change without having to chase anyone for confirmation.",
+   "moves": [
+    [
+     "Invoices",
+     "Signature status moves to awaiting your counter-signature."
+    ],
+    [
+     "Project",
+     "The document now carries the customer's signature and date."
+    ],
+    [
+     "Accounts Receivable",
+     "Still held out \u2014 one signature is not enough."
+    ]
+   ]
+  },
+  {
+   "id": "flow-4",
+   "title": "You counter-sign \u2014 and it starts counting",
+   "blurb": "The moment the money becomes real.",
+   "script": "You sign it back, using the signature you saved in settings, and Kablanet flattens both signatures into a final PDF stored against the project. Now watch your numbers. Until this moment the invoice showed a badge reading excluded from financial totals \u2014 it was not in your project value and not in what you were owed. Signing is what makes it count. If you require signatures and do not chase them, your own figures understate what you have got.",
+   "moves": [
+    [
+     "Invoices",
+     "Fully signed. The executed PDF is attached and the exclusion badge disappears."
+    ],
+    [
+     "Project",
+     "Project value goes up by the invoice amount."
+    ],
+    [
+     "Accounts Receivable",
+     "The unpaid amount now lands in the aging list."
+    ],
+    [
+     "Dashboard",
+     "Total Projects Value and Outstanding Balance both rise."
+    ]
+   ]
+  },
+  {
+   "id": "flow-5",
+   "title": "The money arrives",
+   "blurb": "One entry, four screens updated.",
+   "script": "When the payment lands, record it \u2014 either from the payment schedule inside the project or from the Payments screen. Enter the amount, the date, the method and a check number if you have one, and move it to received. That single entry is the only place you type it. Every other number in the app is calculated from it, which is why the dashboard, the aging list and the project all agree with each other without you reconciling anything.",
+   "moves": [
+    [
+     "Payments",
+     "The payment row moves from scheduled to received."
+    ],
+    [
+     "Accounts Receivable",
+     "The amount drops out of the aging buckets."
+    ],
+    [
+     "Dashboard",
+     "Received Amount rises, Outstanding Balance falls by the same amount."
+    ],
+    [
+     "Project",
+     "The schedule row is settled and the project balance updates."
+    ]
+   ]
+  },
+  {
+   "id": "flow-6",
+   "title": "Give part of the work to a sub",
+   "blurb": "Now the other side of the job starts filling in.",
+   "script": "Say you are not doing all of this yourself. On the same project, add a job for your subcontractor \u2014 who is doing it, what the scope is, and what you agreed to pay them. You can type it in, or import their bid or invoice and let Kablanet read the details off the document. From that moment it is a commitment, so it shows up as money you owe rather than money you have spent.",
+   "moves": [
+    [
+     "Project",
+     "The job appears in the cost section under the same project."
+    ],
+    [
+     "Jobs",
+     "New row against that contractor."
+    ],
+    [
+     "Contractors",
+     "That subcontractor's balance and job count go up."
+    ],
+    [
+     "Accounts Payable",
+     "The amount you owe them appears, with its due date."
+    ]
+   ]
+  },
+  {
+   "id": "flow-7",
+   "title": "Materials, and what the job left you",
+   "blurb": "Both sides on one page, which was the point.",
+   "script": "Log your material invoices against the same project and your crew's hours through time tracking. Now the project has everything \u2014 what you billed on one side, and your subs, materials and labor on the other. The difference is what the job actually left you, and you did not calculate it, assemble a spreadsheet, or wait for month end. It was true the moment you entered the last piece, and it stays true as the job carries on.",
+   "moves": [
+    [
+     "Project",
+     "Cost breakdown complete \u2014 billed against jobs, materials and labor."
+    ],
+    [
+     "Accounts Payable",
+     "Supplier invoices sit alongside the jobs, with their due dates."
+    ],
+    [
+     "Suppliers",
+     "That supplier's outstanding balance updates."
+    ],
+    [
+     "Dashboard",
+     "Total Jobs and Materials, and the outstanding tiles beside them, fill in."
+    ]
+   ]
+  }
+ ]
+}

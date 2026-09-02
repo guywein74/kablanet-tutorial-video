@@ -1,0 +1,1 @@
+Each row carries the project, the amount, where it has got to, and whether it has been signed.

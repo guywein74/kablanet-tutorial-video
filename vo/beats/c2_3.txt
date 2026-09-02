@@ -1,0 +1,1 @@
+Invoices, Accounts Receivable, Payments on one side, Jobs, Contractors, Suppliers and Accounts Payable on the other.

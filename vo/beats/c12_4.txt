@@ -1,0 +1,1 @@
+Until an invoice you marked Require Signature is signed by both sides, it sits in your list with a badge telling you it is excluded from your totals.

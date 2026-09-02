@@ -1,0 +1,8 @@
+[
+ ["c19_1", "Payments is the ledger of money actually moving, both directions."],
+ ["c19_2", "AP is what went out to your subs and suppliers."],
+ ["c19_3", "AR is what came in from your customers."],
+ ["c19_4", "Each row carries the project, the date, the amount, how it was paid and a check number if you have one."],
+ ["c19_5", "Filter by project, by contractor, by supplier, by status or by date, and download the lot as a CSV for your bookkeeper."],
+ ["c19_6", "Record a payment here or from inside the project — either way it lands in one place."]
+]
